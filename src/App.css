@@ -947,9 +947,11 @@ hr {
     justify-content: space-between;
     width: 100%;
   }
+  
   .login_form{
     width: 100%;
     margin-bottom: 5px;
+  
   }
   .floating{
     margin: 0;
