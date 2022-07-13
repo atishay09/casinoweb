@@ -11,7 +11,7 @@ import Casino from "./components/Casino";
 import Slot from "./components/Slot";
 import Fantasy from "./components/Fantasy";
 
-const App = () => {
+function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLogin, setLogin] = useState(false);
   const showModal = () => {
