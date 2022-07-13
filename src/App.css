@@ -302,6 +302,9 @@ body {
 .input_password .form-check input {
   height: 10px;
 }
+.toggle-sidebar-btn{
+  display: none;
+}
 
 /* center component */
 
@@ -915,6 +918,11 @@ hr {
   animation: none;
 }
 
+.btn:focus{
+  box-shadow: none;
+  border-color: none;
+}
+
 /* .launched_images img {
   animation: hidedisp 3.5s ease-in-out infinite;
 }
@@ -960,7 +968,45 @@ hr {
     margin-bottom: 0;
   }
   .leftsidebar{
+    animation: togglehidebar 1s ease ;
     display: none;
+    
+  }
+  .leftsidebar .image img , .upcoming-fixture, .menu_box{
+    animation: togglebar 1s ease ;
+  }
+  .leftsidebar.active{
+    position: fixed;
+    z-index: 100000;
+    display: block;
+    top: 0;
+    animation: togglebar 1s ease ;
+  }
+  @keyframes togglebar {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+  @keyframes togglehidebar {
+    0%{
+      width: 100%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  .toggle-sidebar-btn{
+    display: block;
+    
+  }
+  .toggle-sidebar-btn:focus{
+    border: none;
+  }
+  .toggle-sidebar-btn i{
+    color: var(--color-green);
   }
   .center_component{
     margin-left: 0;

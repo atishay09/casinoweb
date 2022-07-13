@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Leftsidebar from "./Leftsidebar";
 
 const Header = ({showModal ,isLogin}) => {
+  const [toggle,settoggle] = useState(false)
+  const togglesidebar = ()=>{
+    settoggle(!toggle)
+  }
   return (
     <>
       <div className="top_header d-flex justify-content-between">
@@ -20,6 +25,7 @@ const Header = ({showModal ,isLogin}) => {
         </div>
         <div className="login_form d-flex justify-content-between">
         <div>
+        <button className="btn toggle-sidebar-btn" onClick={togglesidebar}><i className="fa-solid fa-bars"></i></button>
         </div>
         <div className="top_header_ls">
           <button type="button" className="btn button btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#registerusermodal">
@@ -31,6 +37,7 @@ const Header = ({showModal ,isLogin}) => {
           </div>
         </div>
       </div>
+        <Leftsidebar toggle={toggle}/>
     </>
   );
 };

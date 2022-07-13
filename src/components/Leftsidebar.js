@@ -1,9 +1,9 @@
 import React from "react";
 import Gameslist from "./Gameslist";
 
-const Leftsidebar = ({isLogin}) => {
+const Leftsidebar = ({isLogin,toggle}) => {
   return (
-    <div className="leftsidebar">
+    <div className={`leftsidebar  ${toggle?"active":""}`}>
       <div className="image">
         <img
           src="https://i0.wp.com/www.groovytakeon.com/wp-content/uploads/2016/04/HERE.jpg?ssl=1"

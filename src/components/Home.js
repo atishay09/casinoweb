@@ -8,7 +8,7 @@ const Home = ({showModal,isLogin}) => {
   return (
     <>
       <div className="main_container">
-        <Leftsidebar isLogin={isLogin}/>
+        {/* <Leftsidebar isLogin={isLogin}/> */}
         <div className="center_component d-flex flex-column">
           <Header showModal={showModal} isLogin={isLogin}/>
           <div className="d-flex main_right_component">
