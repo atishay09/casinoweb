@@ -52,35 +52,7 @@ const Leftsidebar = ({isLogin,toggle}) => {
           <Gameslist />
           <Gameslist />
           <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          <Gameslist />
+          
         </div>
       </div>
     </div>

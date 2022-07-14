@@ -75,7 +75,7 @@ body {
 .top_navbar .download_apk,.top_navbar .deposit_withdraw {
   position: absolute;
   right: 5px;
-  padding: 8px 5px;
+  padding: 5px 5px;
   top: 0;
   color: var(--color-green);
 }
@@ -470,15 +470,14 @@ body {
   pointer-events: none;
 }
 .back {
-  background-color: rgb(80, 62, 213);
+  background-color: #72BBEF!important;
 }
 .lay {
-  background-color: rgba(228, 80, 142, 0.727);
+  background-color: #F994BA!important;
 }
 
 .b1-box {
   height: 24px;
-  padding: 2px 0;
   width: 52px;
   border-radius: 4px;
   text-align: center;
@@ -487,6 +486,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: color 0.5s;
+  background-color: var(--color-dark);
 }
 .game_icon {
   text-align: center;
@@ -519,6 +519,12 @@ body {
 .support {
   width: 100%;
   color: var(--color-light);
+}
+
+.contacts{
+  width: 100%;
+  padding: 10px;
+  background-image: linear-gradient(#2c8268,var(--color-dark));
 }
 
 .social_media {
@@ -936,6 +942,22 @@ hr {
   }
 } */
 
+/* Alert */
+.alert_login {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+
+}
+.alert{
+  padding: 5px 20px;
+  top: 40px;
+  border: 2px solid rgb(205, 89, 89);
+  box-shadow: 5px 5px 2px 1px rgba(129, 14, 66, 0.2)
+}
+
 /* Responsive home page */
 
 @media (max-width:1200px) {
@@ -1200,4 +1222,148 @@ hr {
   color: var(--color-green);
 }
 
+/* sport Header */
 
+.top_header.top_header_sport .floating{
+  border-radius: 8px!important;
+  width: 40%;
+}
+
+.upcoming-fixture_sport{
+  background-color: var(--color-dark);
+  width: 40%;
+  display: flex;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.menu_title_sport{
+  background-color: var(--color-green);
+  
+    float: left;
+    width: 70px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: normal;
+
+}
+.menu_title_sport::after{
+  content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-top: 20px solid transparent;
+    border-left: 20px solid var(--color-green);
+    border-bottom: 20px solid transparent;
+    right: -40px;
+    top: 0;
+}
+
+.center {
+  left: 0;
+  right: 0;
+  color: var(--color-light);
+}
+.carousel_vertical_sport {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+/* .carousel_vertical_sport .pre {
+  position: absolute;
+  top: 0;
+  right: 52%;
+  height: 45px;
+  text-shadow: 1px 1px 1px var(--main-color);
+  font-weight: 300;
+} */
+.carousel_vertical_sport .change_outer_sports {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  text-align: left;
+  height: 40px;
+  overflow: hidden;
+}
+.carousel_vertical_sport .change_outer_sports .change_inner {
+  position: relative;
+  animation: rotate 8s ease-in-out infinite;
+}
+.carousel_vertical_sport .change_outer_sports .element {
+  display: block;
+}
+
+@keyframes rotate {
+  10%,
+  15%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  36% {
+    transform: translateY(-40px);
+  }
+  46%,
+  57% {
+    transform: translateY(-80px);
+  }
+  67%,
+  78% {
+    transform: translateY(-120px);
+  }
+  88%,
+  99% {
+    transform: translateY(-160px);
+  }
+}
+.dropstart .dropdown-toggle::before {
+  display: none;
+}
+
+
+.sport_header_right {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+  width: 18%;
+  align-items: center;
+  color: var(--color-light);
+}
+.float-right {
+  float: right!important;
+}
+.balance{
+  margin: 0px 10px;
+}
+
+.user-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #3c444b;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  padding: 11px 12px;
+}
+.user-icon img{
+  align-items: center;
+  padding-bottom: 10px;
+}
+.username {
+  height: 22px;
+  margin-right: 8px;
+  margin-left: 8px;
+}

@@ -84,32 +84,31 @@ const Centercomponent = ({isLogin , showModal}) => {
 
       <div className="sport-tabs">
       <div className="main_scroll_div">
-      <div onClick={scrolll} className="icon_lr">
+      {/* <div onClick={scrolll} className="icon_lr">
       <i className="fa fa-chevron-left" aria-hidden="true"></i>
-      </div>
+      </div> */}
         <div className="cover">
           <div className="scroll_sport_tabs">
           <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
           <div className="sport_item"><p onClick={showDetails} id='football'>Football</p></div>
           <div className="sport_item"><p onClick={showDetails} id='tennis'>Tennis</p></div>
+          {/* <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
           <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
           <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
           <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
           <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
+          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div> */}
           </div>
         </div>
        
-      <div onClick={scrollr} className="icon_lr">
+      {/* <div onClick={scrollr} className="icon_lr">
       <i className="fa fa-chevron-right" aria-hidden="true"></i>
-      </div>
+      </div> */}
       </div>
 
       </div>
       <Bettable sportname={sport.sportname} isLogin={isLogin} showModal={showModal}/>
-
-      <div className="fantasy_games">
+      {!isLogin?<div className="fantasy_games">
         <div className="menu_title my-2">Fantasy Games</div>
         <div className="fantasy_game ">
           <img
@@ -153,8 +152,8 @@ const Centercomponent = ({isLogin , showModal}) => {
             alt="..."
           />
         </div>
-      </div>
-      <div className="fantasy_games">
+      </div>:""}
+      {!isLogin?<div className="fantasy_games">
         <div className="menu_title my-2">Live Casino</div>
         <div className="fantasy_game">
           <img
@@ -189,7 +188,7 @@ const Centercomponent = ({isLogin , showModal}) => {
           />
          
         </div>
-      </div>
+      </div>:""}
 
       <div className="division"></div>
 

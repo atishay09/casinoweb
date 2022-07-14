@@ -21,13 +21,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Login2form setIsOpen={setIsOpen} isOpen={isOpen} />
+        <Login2form setIsOpen={setIsOpen} isOpen={isOpen} setLogin={setLogin} />
         <Registeruser />
         <Navbar isLogin={isLogin} showModal={showModal} />
         <Routes>
           <Route path="/" element={<Home isLogin={isLogin} showModal={showModal} />} />
 
-          <Route exact path="/sport" element={<Sport isLogin={isLogin}/>} />
+          <Route exact path="/sport" element={<Sport isLogin={isLogin} setLogin={setLogin}/>} />
 
           <Route exact path="/casino" element={<Casino />} />
 

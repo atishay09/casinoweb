@@ -52,10 +52,10 @@ const Bettablebody = ({isLogin , showModal}) => {
                         <div className='d-flex betting_table col-md-5'>
                          <div className="point_table col-4">
                             <div onClick={betbtnClicked} className="back b1-box no-odds">
-                                <span className='d-block odds'>-</span>
+                                <span className='d-block odds'>3.5</span>
                             </div>
                             <div onClick={betbtnClicked} className="lay b1-box no-odds">
-                                <span className='d-block odds'>-</span>
+                                <span className='d-block odds'>2.6</span>
                             </div>
 
                          </div>
@@ -68,12 +68,12 @@ const Bettablebody = ({isLogin , showModal}) => {
                             </div>
 
                          </div>
-                         <div className="suspended point_table col-4">
+                         <div className="point_table col-4">
                             <div onClick={betbtnClicked} className="back b1-box no-odds">
-                                <span className='d-block odds'>-</span>
+                                <span className='d-block odds'>2.1</span>
                             </div>
                             <div onClick={betbtnClicked} className="lay b1-box no-odds">
-                                <span className='d-block odds'>-</span>
+                                <span className='d-block odds'>5.2</span>
                             </div>
 
                          </div>

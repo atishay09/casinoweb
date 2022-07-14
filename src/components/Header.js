@@ -37,7 +37,7 @@ const Header = ({showModal ,isLogin}) => {
           </div>
         </div>
       </div>
-        <Leftsidebar toggle={toggle}/>
+        <Leftsidebar toggle={toggle} isLogin={isLogin}/>
     </>
   );
 };

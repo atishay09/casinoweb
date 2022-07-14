@@ -1,11 +1,10 @@
 import React from 'react'
-import Loginform from './Loginform';
 
 const Rightsidebar = ({showModal}) => {
 
   return (
     <div className='col-2 right_side_bar'>
-    <Loginform/>
+    
             <div className="menu_title winner_lists">
                <p>Winner Announcement</p>
             </div>

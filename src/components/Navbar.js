@@ -34,7 +34,7 @@ const Navbar = ({showModal ,isLogin}) => {
     else{
       navigate('/')
     }
-  }, [])
+  }, [isLogin])
   
   return (
     <>

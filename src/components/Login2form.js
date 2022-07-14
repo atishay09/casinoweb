@@ -1,9 +1,11 @@
 import React,{useState} from "react";
 import { Form } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
+import Alert from 'react-bootstrap/Alert';
 
-const Login2form = ({isOpen,setIsOpen}) => {
-    
+const Login2form = ({isOpen,setIsOpen,setLogin}) => {
+    const [showalert,setshowalert] = useState(false)
+  
 
     const [newNote, setnewNote] = useState({
         username: "",
@@ -13,6 +15,13 @@ const Login2form = ({isOpen,setIsOpen}) => {
         setnewNote({ ...newNote, [e.target.name]: e.target.value });
       };
     
+      const showAlert = ()=>{
+        setshowalert(true)
+        setTimeout(() => {
+          setshowalert(false)
+        }, 2000);
+    
+      }
 
   const hideModal = () => {
     setIsOpen(false);
@@ -20,10 +29,21 @@ const Login2form = ({isOpen,setIsOpen}) => {
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    setIsOpen(false);
+    if(newNote.username==='foo' && newNote.password==="bar"){
+      setLogin(true);
+    }
+    else{
+      showAlert();
+    }
+    hideModal()
   }
   return (
     <>
+   {showalert && <div className="alert_login">
+    <Alert  variant='danger'>
+          Invalid Credentials
+        </Alert>
+        </div>}
       <Modal show={isOpen} onHide={hideModal}>
         <Modal.Header closeButton>
           <Modal.Title>LOGIN</Modal.Title>
@@ -56,7 +76,7 @@ const Login2form = ({isOpen,setIsOpen}) => {
                     onChange={onChange}
                     value={newNote.password}
                     required
-                    minLength={4}
+                    minLength={3}
                     placeholder="Password"
                   />
   </Form.Group>
