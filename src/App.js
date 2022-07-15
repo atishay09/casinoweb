@@ -4,16 +4,18 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
-import Login2form from "./components/Login2form";
-import Registeruser from "./components/Registeruser";
+import Login2form from "./components/modals/Login2form";
+import Registeruser from "./components/modals/Registeruser";
 import Sport from "./components/Sport";
 import Casino from "./components/Casino";
 import Slot from "./components/Slot";
 import Fantasy from "./components/Fantasy";
+import Withdrawmoney from "./components/smallcomp/Withdrawmoney";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLogin, setLogin] = useState(false);
+  const [isLogin, setLogin] = useState(true);
+  const [isdepOpen, setdepOpen] = useState(false);
   const showModal = () => {
     setIsOpen(true);
   };
@@ -23,7 +25,7 @@ function App() {
       <BrowserRouter>
         <Login2form setIsOpen={setIsOpen} isOpen={isOpen} setLogin={setLogin} />
         <Registeruser />
-        <Navbar isLogin={isLogin} showModal={showModal} />
+        <Navbar isLogin={isLogin} showModal={showModal} isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
         <Routes>
           <Route path="/" element={<Home isLogin={isLogin} showModal={showModal} />} />
 
@@ -34,6 +36,8 @@ function App() {
           <Route exact path="/slot" element={<Slot />} />
 
           <Route exact path="/fantasy" element={<Fantasy />} />
+
+          <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
         </Routes>
       </BrowserRouter>
     </>

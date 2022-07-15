@@ -20,6 +20,13 @@ const Centercomponent = ({isLogin , showModal}) => {
   }
   return (
     <div className="main_center_component col-10">
+    {isLogin && <div className="new-event">
+    <div className="new-event-item sport4">
+    <a href="/sport/game/SeK7puKGhm+IDlF%2FzygDVg==/KXiXoAhy4HnXUrrWwmASRA==" className="">
+    <i className="d-icon icon-4"></i> 
+    <span className="ml-2" style={{"color":"rgb(248, 249, 250)"}} >ENGLAND vs INDIA</span>
+    </a>
+    </div></div>}
       <div
         id="carouselExampleControls"
         className="carousel carousel_cmop slide"
@@ -89,15 +96,10 @@ const Centercomponent = ({isLogin , showModal}) => {
       </div> */}
         <div className="cover">
           <div className="scroll_sport_tabs">
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='football'>Football</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='tennis'>Tennis</p></div>
-          {/* <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div>
-          <div className="sport_item"><p onClick={showDetails} id='cricket'>Cricket</p></div> */}
+          <div className="sport_item"><p onClick={showDetails} id='cricket'>
+          <i className=" fa fa-futbol-o mx-2" aria-hidden="true"></i>Cricket</p></div>
+          <div className="sport_item"><p onClick={showDetails} id='football'><i className=" fa fa-futbol-o mx-2" aria-hidden="true"></i>Football</p></div>
+          <div className="sport_item"><p onClick={showDetails} id='tennis'><i className=" fa fa-futbol-o mx-2" aria-hidden="true"></i>Tennis</p></div>
           </div>
         </div>
        
@@ -108,6 +110,8 @@ const Centercomponent = ({isLogin , showModal}) => {
 
       </div>
       <Bettable sportname={sport.sportname} isLogin={isLogin} showModal={showModal}/>
+
+
       {!isLogin?<div className="fantasy_games">
         <div className="menu_title my-2">Fantasy Games</div>
         <div className="fantasy_game ">

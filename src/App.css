@@ -1302,7 +1302,7 @@ hr {
   animation: rotate 8s ease-in-out infinite;
 }
 .carousel_vertical_sport .change_outer_sports .element {
-  display: block;
+  width: max-content;
 }
 
 @keyframes rotate {
@@ -1366,4 +1366,248 @@ hr {
   height: 22px;
   margin-right: 8px;
   margin-left: 8px;
+}
+
+/* Right side bar sport */
+
+.wrapper_sport {
+  background-color: var(--color-dark);
+  height: calc(100vh - 110px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel_vertical3 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel__item-sport {
+  height: 33.33%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  filter: drop-shadow(0 2px 2px #555);
+  will-change: transform, opacity;
+  -webkit-animation: carousel-animate-vertical 27s linear infinite;
+  animation: carousel-animate-vertical 27s linear infinite;
+}
+
+.carousel__item-sport:nth-child(1) {
+  -webkit-animation-delay: calc(3s * -1);
+  animation-delay: calc(3s * -1);
+}
+
+.carousel__item-sport:nth-child(2) {
+  -webkit-animation-delay: calc(3s * 0);
+  animation-delay: calc(3s * 0);
+}
+
+.carousel__item-sport:nth-child(3) {
+  -webkit-animation-delay: calc(3s * 1);
+  animation-delay: calc(3s * 1);
+}
+
+.carousel__item-sport:nth-child(4) {
+  -webkit-animation-delay: calc(3s * 2);
+  animation-delay: calc(3s * 2);
+}
+
+.carousel__item-sport:nth-child(5) {
+  -webkit-animation-delay: calc(3s * 3);
+  animation-delay: calc(3s * 3);
+}
+
+.carousel__item-sport:nth-child(6) {
+  -webkit-animation-delay: calc(3s * 4);
+  animation-delay: calc(3s * 4);
+}
+
+.carousel__item-sport:nth-child(7) {
+  -webkit-animation-delay: calc(3s * 5);
+  animation-delay: calc(3s * 5);
+}
+
+.carousel__item-sport:nth-child(8) {
+  -webkit-animation-delay: calc(3s * 6);
+  animation-delay: calc(3s * 6);
+}
+
+.carousel__item-sport:last-child {
+  -webkit-animation-delay: calc(-3s * 2);
+  animation-delay: calc(-3s * 2);
+}
+
+/* .carousel__item-head {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.carousel__item-sport-body {
+  width: 100%;
+  border-radius: 8px;
+  padding: 5px;
+  color: var(--color-light);
+}
+
+
+@-webkit-keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%,
+  11.1111111111% {
+    transform: translateY(100%) scale(1);
+    opacity:1;
+    visibility: visible;
+  }
+  14.1111111111%,
+  22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%,
+  33.3333333333% {
+    transform: translateY(-100%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%,
+  11.1111111111% {
+    transform: translateY(100%) scale(1);
+    opacity:1;
+    visibility: visible;
+  }
+  14.1111111111%,
+  22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%,
+  33.3333333333% {
+    transform: translateY(-100%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* centercomponent top bar in sport */
+
+.new-event {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 6px 0;
+}
+
+.new-event .new-event-item {
+  flex: 1;
+  max-width: 100%;
+  /* background-image: url('	https://sitethemedata.com/v71/static/front/img/wave2.svg'); */
+  background-position: center bottom;
+  min-width: calc(20% - 10px);
+  margin: 0 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.sport4, .sport4:active, .sport4:focus, .sport4:hover {
+  background-color: rgb(60, 60, 228);
+}
+
+
+/* deposit form */
+
+.deposit_form_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit_form_top .input_amt input{
+  width: 120px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.deposit_form_top .payment_type{
+  width: 240px;
+}
+.deposit_form_top .payment_type select{
+  overflow: hidden;
+  width: 100%;
+  font-size: 15px;
+  height: 38px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.deposit_form_top .button_sub{
+  align-items: end;
+    display: flex;
+
+}
+
+/* header2 */
+
+.header2 .logo{
+  height: max-content;
+}
+.header2 .logo img{
+  height: 60px;
+  
+}
+
+.header2 .floating{
+  margin: 10px;
 }

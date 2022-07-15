@@ -2,6 +2,7 @@ import React from 'react'
 import Centercomponent from './Centercomponent'
 import HeaderSport from './HeaderSport'
 import Leftsidebar from './Leftsidebar'
+import RightsidebarSport from './RightsidebarSport'
 
 const Sport = ({isLogin ,setLogin}) => {
   return (
@@ -9,9 +10,10 @@ const Sport = ({isLogin ,setLogin}) => {
     <div className="main_container">
     <Leftsidebar isLogin={isLogin}/>
     <div className="center_component d-flex flex-column">
-          <HeaderSport isLogin={isLogin} setLogin={setLogin}/>
+          <HeaderSport setLogin={setLogin}/>
           <div className="d-flex">
             <Centercomponent isLogin={isLogin}/>
+            <RightsidebarSport/>
           </div>
         </div>
 

@@ -84,7 +84,7 @@ const Login2form = ({isOpen,setIsOpen,setLogin}) => {
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
   <Modal.Footer>
-          <button className="btn btn-warning button" onClick={hideModal}>Cancel</button>
+          {/* <button className="btn btn-warning button" onClick={hideModal}>Cancel</button> */}
           <button type="submit" className="btn btn-warning button">Login</button>
         </Modal.Footer>
 </Form>
