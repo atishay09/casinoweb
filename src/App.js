@@ -15,7 +15,7 @@ import Sportgame from "./components/sportgame/Sportgame";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLogin, setLogin] = useState(false);
+  const [isLogin, setLogin] = useState(true);
   const [isdepOpen, setdepOpen] = useState(false);
   const showModal = () => {
     setIsOpen(true);

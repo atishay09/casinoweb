@@ -290,7 +290,7 @@ const Sportdetails = () => {
               >
                 <div className="nation-name">
                   <span title="Normal">
-                    <a href="javascript:void(0)" title="">
+                    <a href="#" title="">
                       <img
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
@@ -668,25 +668,25 @@ const Sportdetails = () => {
               </div>
             </div>{" "}
           </div>{" "}
-          <div class="market-2" id="goto-4">
-            <div class="bet-table">
+          <div className="market-2" id="goto-4">
+            <div className="bet-table">
               <div
                 data-bs-toggle="collapse"
                 data-bs-target="#market4"
                 aria-expanded="true"
-                class="bet-table-header"
+                className="bet-table-header"
               >
-                <div class="nation-name">
+                <div className="nation-name">
                   <span title="1st Period Winner">
-                    <a href="javascript:void(0)" title="">
+                    <a href="#" title="">
                       <img
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
-                        class="mr-1"
+                        className="mr-1"
                       />
                     </a>
                     1st Period Winner
                   </span>{" "}
-                  <span class="max-bet d-none-desktop">
+                  <span className="max-bet d-none-desktop">
                     <span title="Max : 1">
                       Max: <span>1</span>
                     </span>
@@ -696,101 +696,101 @@ const Sportdetails = () => {
               <div
                 id="market4"
                 data-title="ACTIVE"
-                class="bet-table-body collapse show"
+                className="bet-table-body collapse show"
               >
-                <div class="bet-table-row d-none-mobile">
-                  <div class="nation-name">
-                    <span class="max-bet">
+                <div className="bet-table-row d-none-mobile">
+                  <div className="nation-name">
+                    <span className="max-bet">
                       <span title="Max : 1">
                         Max: <span>1</span>
                       </span>
                     </span>
                   </div>{" "}
-                  <div class="back bl-title back-title">Back</div>{" "}
-                  <div class="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title">Back</div>{" "}
+                  <div className="lay bl-title lay-title">Lay</div>
                 </div>{" "}
-                <div class="bet-table-mobile-row d-none-desktop">
-                  <div class="bet-table-mobile-team-name">
+                <div className="bet-table-mobile-row d-none-desktop">
+                  <div className="bet-table-mobile-team-name">
                     <span>PFC Ludogorets Razgrad </span> <span></span>
                   </div>
                 </div>{" "}
-                <div data-title="OPEN" class="bet-table-row">
-                  <div class="nation-name d-none-mobile">
+                <div data-title="OPEN" className="bet-table-row">
+                  <div className="nation-name d-none-mobile">
                     <p>
                       <span>PFC Ludogorets Razgrad </span>{" "}
-                      <span class="float-right"></span>
+                      <span className="float-right"></span>
                     </p>{" "}
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                   </div>{" "}
-                  <div class="bl-box back back">
-                    <span class="d-block odds">2.16</span>{" "}
-                    <span class="d-block">15L</span>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">2.16</span>{" "}
+                    <span className="d-block">15L</span>
                   </div>{" "}
-                  <div class="bl-box lay lay no-val">
-                    <span class="d-block odds">—</span>{" "}
+                  <div className="bl-box lay lay no-val">
+                    <span className="d-block odds">—</span>{" "}
                   </div>
                 </div>
-                <div class="bet-table-mobile-row d-none-desktop">
-                  <div class="bet-table-mobile-team-name">
+                <div className="bet-table-mobile-row d-none-desktop">
+                  <div className="bet-table-mobile-team-name">
                     <span>Shamrock Rovers</span> <span></span>
                   </div>
                 </div>{" "}
-                <div data-title="OPEN" class="bet-table-row">
-                  <div class="nation-name d-none-mobile">
+                <div data-title="OPEN" className="bet-table-row">
+                  <div className="nation-name d-none-mobile">
                     <p>
                       <span>Shamrock Rovers</span>{" "}
-                      <span class="float-right"></span>
+                      <span className="float-right"></span>
                     </p>{" "}
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                   </div>{" "}
-                  <div class="bl-box back back">
-                    <span class="d-block odds">6.32</span>{" "}
-                    <span class="d-block">15L</span>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">6.32</span>{" "}
+                    <span className="d-block">15L</span>
                   </div>{" "}
-                  <div class="bl-box lay lay no-val">
-                    <span class="d-block odds">—</span>{" "}
+                  <div className="bl-box lay lay no-val">
+                    <span className="d-block odds">—</span>{" "}
                   </div>
                 </div>
-                <div class="bet-table-mobile-row d-none-desktop">
-                  <div class="bet-table-mobile-team-name">
+                <div className="bet-table-mobile-row d-none-desktop">
+                  <div className="bet-table-mobile-team-name">
                     <span>Draw</span> <span></span>
                   </div>
                 </div>{" "}
-                <div data-title="OPEN" class="bet-table-row">
-                  <div class="nation-name d-none-mobile">
+                <div data-title="OPEN" className="bet-table-row">
+                  <div className="nation-name d-none-mobile">
                     <p>
-                      <span>Draw</span> <span class="float-right"></span>
+                      <span>Draw</span> <span className="float-right"></span>
                     </p>{" "}
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                   </div>{" "}
-                  <div class="bl-box back back">
-                    <span class="d-block odds">2.32</span>{" "}
-                    <span class="d-block">15L</span>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">2.32</span>{" "}
+                    <span className="d-block">15L</span>
                   </div>{" "}
-                  <div class="bl-box lay lay no-val">
-                    <span class="d-block odds">—</span>{" "}
+                  <div className="bl-box lay lay no-val">
+                    <span className="d-block odds">—</span>{" "}
                   </div>
                 </div>
               </div>
             </div>{" "}
           </div>{" "}
-          <div class="market-1" id="goto-7">
-            <div class="bet-table">
+          <div className="market-1" id="goto-7">
+            <div className="bet-table">
               <div
                 data-bs-toggle="collapse"
                 data-bs-target="#market7"
-                class="bet-table-header"
+                className="bet-table-header"
               >
                 <span title="HT/FT">
                   <a href="#" title="">
                     <img
                       src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
-                      class="mr-1"
+                      className="mr-1"
                     />
                   </a>
                   HT/FT
                 </span>{" "}
-                <span class="max-bet">
+                <span className="max-bet">
                   <span title="Max : 1">
                     Max: <span>1</span>
                   </span>
@@ -799,104 +799,104 @@ const Sportdetails = () => {
               <div
                 id="market7"
                 data-title="ACTIVE"
-                class="bet-table-body collapse show"
+                className="bet-table-body collapse show"
               >
-                <div class="bet-table-row">
-                  <div class="market-1-item">
+                <div className="bet-table-row">
+                  <div className="market-1-item">
                     <div>
-                      <span>1/1</span> <span class="ml-2"></span>
+                      <span>1/1</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">2.38</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">2.38</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>1/X</span> <span class="ml-2"></span>
+                      <span>1/X</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">19</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">19</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>1/2</span> <span class="ml-2"></span>
+                      <span>1/2</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">51</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">51</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>X/1</span> <span class="ml-2"></span>
+                      <span>X/1</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">4</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">4</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>X/X</span> <span class="ml-2"></span>
+                      <span>X/X</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">5.5</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">5.5</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>X/2</span> <span class="ml-2"></span>
+                      <span>X/2</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">12</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">12</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>2/1</span> <span class="ml-2"></span>
+                      <span>2/1</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">26</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">26</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>2/X</span> <span class="ml-2"></span>
+                      <span>2/X</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">19</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">19</span>
                     </div>
                   </div>
-                  <div class="market-1-item">
+                  <div className="market-1-item">
                     <div>
-                      <span>2/2</span> <span class="ml-2"></span>
+                      <span>2/2</span> <span className="ml-2"></span>
                     </div>{" "}
-                    <div class="bl-box back back">
-                      <span class="d-block odds">10</span>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">10</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>{" "}
           </div>{" "}
-          <div class="market-11" id="goto-2">
-            <div class="bet-table">
+          <div className="market-11" id="goto-2">
+            <div className="bet-table">
               <div
                 data-bs-toggle="collapse"
                 data-bs-target="#market2"
                 aria-expanded="true"
-                class="bet-table-header"
+                className="bet-table-header"
               >
-                <div class="nation-name">
+                <div className="nation-name">
                   <span title="Game Winner 1/3">
-                    <a href="javascript:void(0)" title="">
+                    <a href="#" title="">
                       <img
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
-                        class="mr-1"
+                        className="mr-1"
                       />
                     </a>
                     Game Winner 1/3
                   </span>{" "}
-                  <span class="max-bet d-none-desktop">
+                  <span className="max-bet d-none-desktop">
                     <span title="Max : 10K">
                       Max:<span>10K</span>
                     </span>
@@ -906,61 +906,61 @@ const Sportdetails = () => {
               <div
                 id="market2"
                 data-title="ACTIVE"
-                class="bet-table-body collapse show"
+                className="bet-table-body collapse show"
               >
-                <div class="bet-table-row d-none-mobile">
-                  <div class="nation-name">
-                    <span class="max-bet">
+                <div className="bet-table-row d-none-mobile">
+                  <div className="nation-name">
+                    <span className="max-bet">
                       <span title="Max : 10K">
                         Max:<span>10K</span>
                       </span>
                     </span>
                   </div>{" "}
-                  <div class="back bl-title back-title">Back</div>{" "}
-                  <div class="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title">Back</div>{" "}
+                  <div className="lay bl-title lay-title">Lay</div>
                 </div>{" "}
-                <div class="bet-table-mobile-row d-none-desktop">
-                  <div class="bet-table-mobile-team-name">
+                <div className="bet-table-mobile-row d-none-desktop">
+                  <div className="bet-table-mobile-team-name">
                     <span>Lucas Catarina </span> <span></span>
                   </div>
                 </div>{" "}
-                <div data-title="OPEN" class="bet-table-row">
-                  <div class="nation-name d-none-mobile">
+                <div data-title="OPEN" className="bet-table-row">
+                  <div className="nation-name d-none-mobile">
                     <p>
                       <span>Lucas Catarina </span>{" "}
-                      <span class="float-right"></span>
+                      <span className="float-right"></span>
                     </p>{" "}
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                   </div>{" "}
-                  <div class="bl-box back back">
-                    <span class="d-block odds">1.52</span>{" "}
-                    <span class="d-block">5L</span>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">1.52</span>{" "}
+                    <span className="d-block">5L</span>
                   </div>{" "}
-                  <div class="bl-box lay lay">
-                    <span class="d-block odds">1.65</span>{" "}
-                    <span class="d-block">5L</span>
+                  <div className="bl-box lay lay">
+                    <span className="d-block odds">1.65</span>{" "}
+                    <span className="d-block">5L</span>
                   </div>
                 </div>
-                <div class="bet-table-mobile-row d-none-desktop">
-                  <div class="bet-table-mobile-team-name">
+                <div className="bet-table-mobile-row d-none-desktop">
+                  <div className="bet-table-mobile-team-name">
                     <span>Mikhail Kukushkin</span> <span></span>
                   </div>
                 </div>{" "}
-                <div data-title="OPEN" class="bet-table-row">
-                  <div class="nation-name d-none-mobile">
+                <div data-title="OPEN" className="bet-table-row">
+                  <div className="nation-name d-none-mobile">
                     <p>
                       <span>Mikhail Kukushkin</span>{" "}
-                      <span class="float-right"></span>
+                      <span className="float-right"></span>
                     </p>{" "}
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                   </div>{" "}
-                  <div class="bl-box back back">
-                    <span class="d-block odds">2.52</span>{" "}
-                    <span class="d-block">5L</span>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">2.52</span>{" "}
+                    <span className="d-block">5L</span>
                   </div>{" "}
-                  <div class="bl-box lay lay">
-                    <span class="d-block odds">2.94</span>{" "}
-                    <span class="d-block">5L</span>
+                  <div className="bl-box lay lay">
+                    <span className="d-block odds">2.94</span>{" "}
+                    <span className="d-block">5L</span>
                   </div>
                 </div>
               </div>
