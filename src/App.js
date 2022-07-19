@@ -38,9 +38,9 @@ function App() {
 
           <Route exact path="/fantasy" element={<Fantasy />} />
 
-          <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
+          {/* <Route exact path="/withdraw-request" element={<Withdrawmoney />} /> */}
 
-          <Route exact path="/sport/details/1" element={<Sportgame isLogin={isLogin} showModal={showModal} setLogin={setLogin}/>}/>
+          {/* <Route exact path="/sport/details/1" element={<Sportgame isLogin={isLogin} showModal={showModal} setLogin={setLogin}/>}/> */}
         </Routes>
       </BrowserRouter>
     </>

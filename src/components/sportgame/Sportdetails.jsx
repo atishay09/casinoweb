@@ -24,7 +24,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="MATCH_ODDS">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
@@ -165,7 +165,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="Bookmaker">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
@@ -291,7 +291,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="Normal">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
@@ -501,7 +501,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="meter">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
@@ -679,7 +679,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="1st Period Winner">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
@@ -783,7 +783,7 @@ const Sportdetails = () => {
               >
                 <span title="HT/FT">
                   <a href="#" title="">
-                    <img
+                    <img alt='...'
                       src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                       className="mr-1"
                     />
@@ -889,7 +889,7 @@ const Sportdetails = () => {
                 <div className="nation-name">
                   <span title="Game Winner 1/3">
                     <a href="#" title="">
-                      <img
+                      <img alt='...'
                         src="https://sitethemedata.com/v71/static/front/img/arrow-down.svg"
                         className="mr-1"
                       />
