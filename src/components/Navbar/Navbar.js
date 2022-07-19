@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Depositmoney from "./modals/Depositmoney";
+import Depositmoney from "../modals/Depositmoney";
 
 const Navbar = ({ showModal, isLogin, isdepOpen, setdepOpen }) => {
   let location = useLocation();

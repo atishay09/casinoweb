@@ -1,7 +1,7 @@
 import React from "react";
-import Centercomponent from "./Centercomponent";
-import Header from "./Header";
-import Rightsidebar from "./Rightsidebar";
+import Header from "../Headers/Header";
+import Centercomponent from "../Main/Centercomponent";
+import Rightsidebar from "../Sidebar/Rightsidebar";
 
 const Home = ({showModal,isLogin}) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import Offerfloat from './smallcomp/Offerfloat'
-import PointsMenu from './smallcomp/PointsMenu'
-import Upcomingfixture from './smallcomp/Upcomingfixture'
+import Offerfloat from './Offerfloat'
+import PointsMenu from './PointsMenu'
+import Upcomingfixture from './Upcomingfixture'
 
 const HeaderSport = ({setLogin}) => {
   return (

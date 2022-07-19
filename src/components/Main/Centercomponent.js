@@ -4,8 +4,8 @@ import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import Carousel from 'react-bootstrap/Carousel';
 
 import React, { useState } from "react";
-import Bettable from "./Bettable";
-import Footer from "./smallcomp/Footer";
+import Footer from "../Footer/Footer";
+import Bettable from "../Betting/Bettable";
 
 const Centercomponent = ({ isLogin, showModal }) => {
   const [sport, setSport] = useState({ sportname: "" });
@@ -24,7 +24,7 @@ const Centercomponent = ({ isLogin, showModal }) => {
   //   scroll_listr.scrollBy(-350,0)
   // }
   return (
-    <div className="main_center_component col-10">
+    <div className="main_center_component col-9">
       {isLogin && (
         <div className="new-event">
           <div className="new-event-item sport4">

@@ -3,7 +3,7 @@ import React from "react";
 const RightsidebarSport = () => {
   return (
     <>
-      <div className="col-2 right_side_bar right_sidebar_sport">
+      <div className="col-3 right_side_bar right_sidebar_sport">
       <div>
         <div className="wrapper_sport">
           <div className="carousel_vertical3">

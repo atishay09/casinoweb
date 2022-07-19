@@ -1,8 +1,8 @@
 import React from 'react'
-import Centercomponent from './Centercomponent'
-import HeaderSport from './HeaderSport'
-import Leftsidebar from './Leftsidebar'
-import RightsidebarSport from './RightsidebarSport'
+import Centercomponent from '../Main/Centercomponent'
+import HeaderSport from '../Headers/HeaderSport'
+import RightsidebarSport from '../Sidebar/RightsidebarSport'
+import Leftsidebar from '../Sidebar/Leftsidebar'
 
 const Sport = ({isLogin ,setLogin}) => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 
 const Rightsidebar = ({ showModal }) => {
   return (
-    <div className="col-2 right_side_bar">
+    <div className="col-3 right_side_bar">
       <div className="menu_title winner_lists">
         <p>Winner Announcement</p>
       </div>

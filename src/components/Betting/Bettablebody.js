@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import BettingModal from './BettingModal';
+import BettingModal from '../modals/BettingModal';
 
 const Bettablebody = ({isLogin , showModal,amt}) => {
     const [show, setShow] = useState(false);

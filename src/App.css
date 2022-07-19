@@ -1,6 +1,6 @@
 :root {
   --main-color: #2f2f2f;
-  --color-dark: #111111;
+  --color-dark: #1d1d1d;
   --color-green: #ffcb74;
   --color-light: #f6f6f6;
 }
@@ -13,6 +13,7 @@ body {
   background: var(--main-color);
   padding: 0px;
   margin: 0px;
+  color: var(--color-light);
 }
 
 .App-logo {
@@ -193,7 +194,7 @@ body {
   background-color: var(--color-dark);
   border: none;
   box-shadow: none;
-  padding: 10px ;
+  padding: 1px ;
   margin: 0;
 }
 
@@ -1044,19 +1045,16 @@ hr {
     margin-bottom: 0;
   }
   .leftsidebar{
-    animation: togglehidebar 1s ease ;
+    
     display: none;
     
   }
-  .leftsidebar .image img , .upcoming-fixture, .menu_box{
-    animation: togglebar 1s ease ;
-  }
+ 
   .leftsidebar.active{
     position: fixed;
     z-index: 100000;
     display: block;
     top: 0;
-    animation: togglebar 1s ease ;
   }
   @keyframes togglebar {
     0%{
@@ -1733,3 +1731,4 @@ hr {
 .d-none-desktop{
   display: none;
 }
+

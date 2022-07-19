@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Header2 from "./Header2"; 
-import Footer from './Footer'  
+import Footer from '../Footer/Footer'  
+import Header2 from "../Headers/Header2";
 import Transactiontable from "./Transactiontable";
 
 const Withdrawmoney = () => {
