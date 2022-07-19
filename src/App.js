@@ -30,13 +30,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home isLogin={isLogin} showModal={showModal} />} />
 
-          <Route exact path="/sport" element={<Sport isLogin={isLogin} setLogin={setLogin}/>} />
+          {/* <Route exact path="/sport" element={<Sport isLogin={isLogin} setLogin={setLogin}/>} />
 
           <Route exact path="/casino" element={<Casino />} />
 
           <Route exact path="/slot" element={<Slot />} />
 
-          <Route exact path="/fantasy" element={<Fantasy />} />
+          <Route exact path="/fantasy" element={<Fantasy />} /> */}
 
           {/* <Route exact path="/withdraw-request" element={<Withdrawmoney />} /> */}
 
