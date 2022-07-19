@@ -347,7 +347,7 @@ body {
   font-size: 10px;
   text-decoration: none;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 1.5px;
 }
 .input_password .form-check input {
@@ -1646,7 +1646,7 @@ hr {
 }
 
 .deposit_form_top .button_sub{
-  align-items: end;
+  align-items: flex-end;
     display: flex;
 
 }
