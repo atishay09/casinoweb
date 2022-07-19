@@ -77,7 +77,7 @@ const PointsMenu = ({setLogin}) => {
               <div className="login-seperator dropdown-item"></div>
               <li>
                 <p
-                  onClick={() => {
+                  onClick={() =>{
                     setLogin(false);
                   }}
                   className=" dropdown-item"
