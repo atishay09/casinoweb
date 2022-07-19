@@ -11,6 +11,7 @@ import Casino from "./components/Casino";
 import Slot from "./components/Slot";
 import Fantasy from "./components/Fantasy";
 import Withdrawmoney from "./components/smallcomp/Withdrawmoney";
+import Sportgame from "./components/sportgame/Sportgame";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,8 @@ function App() {
           <Route exact path="/fantasy" element={<Fantasy />} />
 
           <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
+
+          <Route exact path="/sport/details/1" element={<Sportgame isLogin={isLogin} showModal={showModal}/>}/>
         </Routes>
       </BrowserRouter>
     </>

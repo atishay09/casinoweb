@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import BettingModal from './BettingModal';
 
-const Bettablebody = ({isLogin , showModal}) => {
+const Bettablebody = ({isLogin , showModal,amt}) => {
     const [show, setShow] = useState(false);
     const betbtnClicked = () =>{
         if(!isLogin){
@@ -52,7 +52,7 @@ const Bettablebody = ({isLogin , showModal}) => {
                         <div className='d-flex betting_table col-md-5'>
                          <div className="point_table col-4">
                             <div onClick={betbtnClicked} className="back b1-box no-odds">
-                                <span className='d-block odds'>3.5</span>
+                                <span className='d-block odds'>{amt}</span>
                             </div>
                             <div onClick={betbtnClicked} className="lay b1-box no-odds">
                                 <span className='d-block odds'>2.6</span>

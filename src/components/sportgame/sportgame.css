@@ -1,0 +1,246 @@
+.center-container .casino-container,
+.center-container .detail-page-container,
+.center-container .home-container,
+.center-container.casino-list-container {
+  min-height: calc(100vh - 60px);
+  height: auto;
+  align-content: flex-start;
+}
+
+.game-header {
+  padding: 8px;
+  color: white;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sport4,
+.sport4:active,
+.sport4:focus,
+.sport4:hover {
+  background-color: blue !important;
+}
+
+.game-header .game-header-name {
+  max-width: calc(100% - 180px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.detail-page-container .market-12,
+.detail-page-container .market-4 {
+  margin-left: 3px;
+  margin-right: 3px;
+  min-width: calc(100% - 6px);
+  flex: 1;
+}
+
+.detail-page-container .bet-table {
+  margin-top: 6px;
+}
+
+.bet-table {
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  margin-top: 0;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.detail-page-container .market-6 {
+  min-width: calc(50% - 6px);
+  max-width: calc(100% - 6px);
+  margin-left: 3px;
+  margin-right: 3px;
+  flex: 1;
+  /* width: 50%; */
+}
+
+.detail-page-container .nation-name {
+  width: calc(100% - 452px);
+  padding-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.detail-page-container .max-bet {
+  font-size: 20px;
+  text-align: left;
+}
+
+.bet-table-body {
+  position: relative;
+}
+
+.bet-table-row {
+  padding: 6px 8px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.detail-page-container .bl-title {
+  height: 22px;
+  border-radius: 4px;
+  width: 68px;
+  text-align: center;
+  line-height: 22px;
+  color: black;
+  font-weight: 400;
+  margin-right: 4px;
+  cursor: default;
+  font-size: 20px;
+}
+
+.back-title {
+  background-color: white;
+  color: #eee !important;
+}
+.back {
+  background-color: var(--back);
+}
+
+.float-right {
+  float: right !important;
+}
+
+.detail-page-container .bl-box {
+  width: 68px;
+  height: 38px;
+  padding: 3px 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bl-box {
+  height: 32px;
+  width: 68px;
+  border-radius: 4px;
+  padding: 5px 0;
+  text-align: center;
+  margin-right: 4px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.bl-box .odds {
+  height: 22px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+}
+
+.bl-box:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+
+.row.row5 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.detail-page-container.cricket-detail .market-6 .fancy-tripple {
+  height: 100%;
+}
+
+.suspendedtext {
+  position: relative;
+  pointer-events: none;
+}
+
+.fancy-min-max {
+  font-size: 16px;
+  text-align: right;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.detail-page-container .market-6 .nation-name {
+  width: calc(100% - 224px);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.bet-table-body {
+  position: relative;
+}
+.container-fluid-5 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+
+.detail-page-container.cricket-detail .market-6 .fancy-tripple {
+  height: 100%;
+}
+.detail-page-container .market-6 .fancy-tripple {
+  border-bottom: 1px solid #3c444b;
+}
+
+.bet-table-body .bet-table-row:first-child {
+  padding: 2px 8px;
+}
+
+.detail-page-container .market-10 .nation-name > span:first-child,
+.detail-page-container .market-11 .nation-name > span:first-child,
+.detail-page-container .market-12 .nation-name > span:first-child,
+.detail-page-container .market-2 .nation-name > span:first-child,
+.detail-page-container .market-3 .nation-name > span:first-child,
+.detail-page-container .market-4 .nation-name > span:first-child,
+.detail-page-container .market-5 .nation-name > span:first-child,
+.detail-page-container .market-6 .nation-name > span:first-child,
+.detail-page-container .market-9 .nation-name > span:first-child {
+  max-width: 100%;
+  line-height: normal;
+}
+.detail-page-container .bet-table-body .nation-name .max-bet {
+  text-align: right;
+}
+.detail-page-container .nation-name > span:first-child {
+  max-width: 100%;
+  display: inline-block;
+  text-transform: capitalize;
+  vertical-align: middle;
+}
+.detail-page-container .market-10 .max-bet,
+.detail-page-container .market-11 .max-bet,
+.detail-page-container .market-12 .max-bet,
+.detail-page-container .market-13 .max-bet,
+.detail-page-container .market-2 .max-bet,
+.detail-page-container .market-3 .max-bet,
+.detail-page-container .market-4 .max-bet,
+.detail-page-container .market-5 .max-bet,
+.detail-page-container .market-6 .max-bet,
+.detail-page-container .market-9 .max-bet {
+  width: 100%;
+  text-align: left;
+  line-height: 1;
+}

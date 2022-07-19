@@ -4,7 +4,7 @@ import Gameslist from "./Gameslist";
 const Leftsidebar = ({isLogin,toggle}) => {
   return (
     <div className={`leftsidebar  ${toggle?"active":""}`}>
-      <div className="image">
+      <div className="image sport">
         <img
           src="https://i0.wp.com/www.groovytakeon.com/wp-content/uploads/2016/04/HERE.jpg?ssl=1"
           alt="logo"
@@ -46,13 +46,10 @@ const Leftsidebar = ({isLogin,toggle}) => {
         <button className="search_btn"><i className="fa fa-search"></i></button>
     </div>
       }
-      <div className="menu_box">
+      <div className="menu_box sport">
         <div className="menu_title">All Sports</div>
         <div className="sports_cateogory">
           <Gameslist />
-          <Gameslist />
-          <Gameslist />
-          
         </div>
       </div>
     </div>
