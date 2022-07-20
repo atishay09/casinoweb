@@ -2,8 +2,16 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Depositmoney from "../modals/Depositmoney";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Navbar = ({ showModal, isLogin, isdepOpen, setdepOpen }) => {
+const Navbar = ({ isdepOpen, setdepOpen }) => {
+
+
+  //context api 
+  const context = useContext(contextvalue);
+  const {isLogin,setloginmodal} = context;
+
   let location = useLocation();
   const navigate = useNavigate();
   const navbtnClicked = (e) => {
@@ -11,7 +19,7 @@ const Navbar = ({ showModal, isLogin, isdepOpen, setdepOpen }) => {
       navigate(`/${e.target.id}`);
     } else {
       navigate("/");
-      showModal();
+      setloginmodal(true);
     }
   };
 

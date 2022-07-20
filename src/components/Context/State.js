@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import Context from './context';
 
 const State = (props) => {
-    const [page,setPage] = useState('home');
+    const [isLogin,setLogin] = useState(true);
+    const [isloginmodal ,setloginmodal] = useState(false)
 
   return (
-    <Context.Provider value={{page,setPage}}>
+    <Context.Provider value={{isLogin,setLogin,isloginmodal ,setloginmodal}}>
         {props.children}
     </Context.Provider>
   )

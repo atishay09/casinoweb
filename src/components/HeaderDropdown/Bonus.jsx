@@ -7,7 +7,7 @@ import DataTable from "react-data-table-component";
 
 
 
-const Bonus = ({ isLogin, setLogin }) => {
+const Bonus = () => {
     const data2 = [
         {
           date:"15/07/2022",
@@ -76,9 +76,9 @@ const Bonus = ({ isLogin, setLogin }) => {
   return (
     <>
       <div className="main_container">
-        <Leftsidebar isLogin={isLogin} />
+        <Leftsidebar />
         <div className="center_component d-flex flex-column">
-          <HeaderSport setLogin={setLogin} />
+          <HeaderSport />
           <div className="d-flex">
             <div className="container-fluid">
               <div className="d-flex mt-3">

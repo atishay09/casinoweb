@@ -15,48 +15,49 @@ import Sportgame from "./components/sportgame/Sportgame";
 import Bonus from "./components/HeaderDropdown/Bonus";
 import Accountstatement from "./components/HeaderDropdown/Accountstatement";
 import Activitylog from "./components/HeaderDropdown/Activitylog";
+import State from "./components/Context/State";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isLogin, setLogin] = useState(true);
   const [isdepOpen, setdepOpen] = useState(false);
-  const showModal = () => {
-    setIsOpen(true);
-  };
-  
+
   return (
     <>
-      <BrowserRouter>
-        <Login2form setIsOpen={setIsOpen} isOpen={isOpen} setLogin={setLogin} />
-        <Registeruser />
-        <Navbar isLogin={isLogin} showModal={showModal} isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
-        <Routes>
-          <Route path="/" element={<Home isLogin={isLogin} showModal={showModal} />} />
+      <State>
+        <BrowserRouter>
+          <Login2form />
+          <Registeruser />
+          <Navbar isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          <Route exact path="/sport" element={<Sport isLogin={isLogin} setLogin={setLogin}/>} />
+            <Route exact path="/sport" element={<Sport />} />
 
-          <Route exact path="/casino" element={<Casino />} />
+            <Route exact path="/casino" element={<Casino />} />
 
-          <Route exact path="/slot" element={<Slot />} />
+            <Route exact path="/slot" element={<Slot />} />
 
-          <Route exact path="/fantasy" element={<Fantasy />} />
+            <Route exact path="/fantasy" element={<Fantasy />} />
 
-          <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
+            <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
 
-          <Route exact path="/sport/details/:id" element={<Sportgame isLogin={isLogin} showModal={showModal} setLogin={setLogin}/>}/>
+            <Route exact path="/sport/details/:id" element={<Sportgame />} />
 
-          <Route exact path="/bonus" element={<Bonus isLogin={isLogin} setLogin={setLogin}/>}/>
+            <Route exact path="/bonus" element={<Bonus />} />
 
-          <Route exact path="/report/accountstatement" element={<Accountstatement />}/>
+            <Route
+              exact
+              path="/report/accountstatement"
+              element={<Accountstatement />}
+            />
 
-          <Route exact path="/report/currentbets" element={<Bonus isLogin={isLogin} setLogin={setLogin}/>}/>
-          
-          <Route exact path="/report/activity" element={<Activitylog />}/>
-          
-        </Routes>
-      </BrowserRouter>
+            <Route exact path="/report/currentbets" element={<Bonus />} />
+
+            <Route exact path="/report/activity" element={<Activitylog />} />
+          </Routes>
+        </BrowserRouter>
+      </State>
     </>
   );
-};
+}
 
 export default App;

@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const PointsMenu = ({ setLogin }) => {
+const PointsMenu = () => {
+  const context = useContext(contextvalue);
+  const {setLogin} = context;
   return (
     <>
       <div className="float-right sport_header_right">
@@ -52,29 +56,14 @@ const PointsMenu = ({ setLogin }) => {
               </li>
               <li>
                 <Link to="/sport" className=" dropdown-item">
-                  Casino Results
-                </Link>{" "}
-              </li>
-              <li>
-                <Link to="/sport" className=" dropdown-item">
-                  Live Casino Bets
-                </Link>{" "}
-              </li>
-              <li>
-                <Link to="/sport" className=" dropdown-item">
-                  Set Button Value
-                </Link>
-              </li>
-              <li>
-                <Link to="/sport" className=" dropdown-item">
                   Change Password
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/sport" className=" dropdown-item">
                   Security Auth Verification
                 </Link>
-              </li>
+              </li> */}
               <div className="login-seperator dropdown-item"></div>
               <li>
                 <p

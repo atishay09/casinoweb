@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import Leftsidebar from "../Sidebar/Leftsidebar";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Header = ({showModal ,isLogin}) => {
+const Header = () => {
+
+  const context = useContext(contextvalue);
+  const {setloginmodal} = context;
+
+
   const [toggle,settoggle] = useState(false)
   const togglesidebar = ()=>{
     settoggle(!toggle)
@@ -31,13 +38,13 @@ const Header = ({showModal ,isLogin}) => {
           <button type="button" className="btn button btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#registerusermodal">
             Register
           </button>
-          <button type="button" className="btn button btn-warning mx-2" onClick={showModal}>
+          <button type="button" className="btn button btn-warning mx-2" onClick={()=>{setloginmodal(true)}}>
             Login
           </button>
           </div>
         </div>
       </div>
-        <Leftsidebar toggle={toggle} isLogin={isLogin}/>
+        <Leftsidebar toggle={toggle} />
     </>
   );
 };

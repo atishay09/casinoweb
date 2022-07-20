@@ -1,7 +1,12 @@
 import React from "react";
 import Gameslist from "./Gameslist";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Leftsidebar = ({isLogin,toggle}) => {
+const Leftsidebar = ({toggle}) => {
+
+  const context = useContext(contextvalue);
+  const {isLogin} = context;
   return (
     <div className={`leftsidebar  ${toggle?"active":""}`}>
       <div className="image sport">

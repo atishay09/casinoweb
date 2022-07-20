@@ -1,6 +1,12 @@
 import React from "react";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Rightsidebar = ({ showModal }) => {
+const Rightsidebar = () => {
+
+  const context = useContext(contextvalue);
+  const {setloginmodal} = context;
+  
   return (
     <div className="col-3 right_side_bar">
       <div className="menu_title winner_lists">
@@ -75,7 +81,7 @@ const Rightsidebar = ({ showModal }) => {
           </div>
           <div className="partner_image">
             <img
-              onClick={showModal}
+              onClick={()=>{setloginmodal(true)}}
               className="col-md-12"
               src="https://sitethemedata.com/casino_icons/other/diam11.png"
               alt="..."
@@ -89,7 +95,7 @@ const Rightsidebar = ({ showModal }) => {
           </div>
           <div className="launched_images">
             <div id="slider">
-              <figure onClick={showModal}>
+              <figure onClick={()=>{setloginmodal(true)}}>
                 <img
                   src="https://sitethemedata.com/casino_icons/other/diam11.png"
                   alt="..."
@@ -122,7 +128,7 @@ const Rightsidebar = ({ showModal }) => {
           <div className="ourcasino_images">
             <img
               className="col-md-12"
-              onClick={showModal}
+              onClick={()=>{setloginmodal(true)}}
               src="https://sitethemedata.com/casino_icons/other/diam11.png"
               alt="..."
             />
@@ -135,7 +141,7 @@ const Rightsidebar = ({ showModal }) => {
         </div>
         <div className="virtual_casino_image">
           <div id="slider">
-            <figure onClick={showModal}>
+            <figure onClick={()=>{setloginmodal(true)}}>
               <img
                 src="https://sitethemedata.com/casino_icons/other/diam11.png"
                 alt="..."
@@ -159,7 +165,7 @@ const Rightsidebar = ({ showModal }) => {
             </figure>
           </div>
           <div id="slider">
-            <figure onClick={showModal}>
+            <figure onClick={()=>{setloginmodal(true)}}>
               <img
                 src="https://sitethemedata.com/casino_icons/other/diam11.png"
                 alt="..."
@@ -183,7 +189,7 @@ const Rightsidebar = ({ showModal }) => {
             </figure>
           </div>
           <div id="slider">
-            <figure onClick={showModal}>
+            <figure onClick={()=>{setloginmodal(true)}}>
               <img
                 src="https://sitethemedata.com/casino_icons/other/diam11.png"
                 alt="..."
@@ -207,7 +213,7 @@ const Rightsidebar = ({ showModal }) => {
             </figure>
           </div>
           <div id="slider">
-            <figure onClick={showModal}>
+            <figure onClick={()=>{setloginmodal(true)}}>
               <img
                 src="https://sitethemedata.com/casino_icons/other/diam11.png"
                 alt="..."

@@ -2,13 +2,20 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BettingModal from '../modals/BettingModal';
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Bettablebody = ({isLogin , showModal,amt,id}) => {
+
+const Bettablebody = ({amt,id}) => {
+
+    const context = useContext(contextvalue);
+    const {isLogin ,setloginmodal} = context;
+
     const [show, setShow] = useState(false);
     const betbtnClicked = () =>{
         if(!isLogin){
             console.log(isLogin)
-            showModal()
+            setloginmodal(true)
         }
         else{
             setShow(true)

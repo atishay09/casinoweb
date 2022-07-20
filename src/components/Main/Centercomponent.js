@@ -2,12 +2,16 @@ import SportsCricketIcon from "@mui/icons-material/SportsCricket";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import Carousel from 'react-bootstrap/Carousel';
-
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import Bettable from "../Betting/Bettable";
 
-const Centercomponent = ({ isLogin, showModal }) => {
+const Centercomponent = () => {
+
+  const context = useContext(contextvalue);
+  const {isLogin} = context;
   const [sport, setSport] = useState({ sportname: "" });
 
   const showDetails = (e) => {
@@ -114,8 +118,6 @@ const Centercomponent = ({ isLogin, showModal }) => {
       <Bettable
         sportname={sport.sportname}
         amt='1.5'
-        isLogin={isLogin}
-        showModal={showModal}
       />
 
       {!isLogin ? (

@@ -1,8 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
 import Bettablebody from './Bettablebody'
 
-const Bettable = ({sportname , isLogin,showModal,amt}) => {
+const Bettable = ({sportname ,amt}) => {
   const data = [{id : '1'},{id : '2'},{id : '3'},{id : '4'},{id : '5'},{id : '6'},]
   return (
     <>
@@ -18,7 +17,7 @@ const Bettable = ({sportname , isLogin,showModal,amt}) => {
                 </div>
             </div>
             {data.map((ele)=>{
-              return(<Bettablebody id={ele.id} key={ele.id} amt={amt} isLogin={isLogin} showModal={showModal}/>)
+              return(<Bettablebody id={ele.id} key={ele.id} amt={amt}  />)
             })}
             
 
