@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Bettablebody from './Bettablebody'
 
 const Bettable = ({sportname , isLogin,showModal,amt}) => {
-  
+  const data = [{id : '1'},{id : '2'},{id : '3'},{id : '4'},{id : '5'},{id : '6'},]
   return (
     <>
         <div className="bet_table">
@@ -17,11 +17,10 @@ const Bettable = ({sportname , isLogin,showModal,amt}) => {
                 <div className="col-md-4 text-center point_table">2</div>
                 </div>
             </div>
-            <Bettablebody amt={amt} isLogin={isLogin} showModal={showModal}/>
-            <Bettablebody amt={amt} isLogin={isLogin} showModal={showModal}/>
-            <Bettablebody amt={amt} isLogin={isLogin} showModal={showModal}/>
-            <Bettablebody amt={amt} isLogin={isLogin} showModal={showModal}/>
-            <Bettablebody amt={amt} isLogin={isLogin} showModal={showModal}/>
+            {data.map((ele)=>{
+              return(<Bettablebody id={ele.id} key={ele.id} amt={amt} isLogin={isLogin} showModal={showModal}/>)
+            })}
+            
 
         </div>
     </>

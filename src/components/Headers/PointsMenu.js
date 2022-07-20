@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PointsMenu = ({setLogin}) => {
+const PointsMenu = ({ setLogin }) => {
   return (
     <>
       <div className="float-right sport_header_right">
@@ -29,55 +30,55 @@ const PointsMenu = ({setLogin}) => {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a href="/bonus" className="dropdown-item">
+                <Link to="/bonus" className="dropdown-item">
                   Bonus
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/report/accountstatement" className="dropdown-item">
+                <Link to="/report/accountstatement" className="dropdown-item">
                   Account Statement
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
                 {" "}
-                <a href="/report/currentbets" className=" dropdown-item">
+                <Link to="/report/currentbets" className=" dropdown-item">
                   Current Bets
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
-                <a href="/report/activity" className=" dropdown-item">
+                <Link to="/report/activity" className=" dropdown-item">
                   Activity Log
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
-                <a href="/report/casinoresult" className=" dropdown-item">
+                <Link to="/sport" className=" dropdown-item">
                   Casino Results
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
-                <a href="/report/livecasinoresult" className=" dropdown-item">
+                <Link to="/sport" className=" dropdown-item">
                   Live Casino Bets
-                </a>{" "}
+                </Link>{" "}
               </li>
               <li>
-                <a href="#" className=" dropdown-item">
+                <Link to="/sport" className=" dropdown-item">
                   Set Button Value
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className=" dropdown-item">
+                <Link to="/sport" className=" dropdown-item">
                   Change Password
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/settings/secureauth" className=" dropdown-item">
+                <Link to="/sport" className=" dropdown-item">
                   Security Auth Verification
-                </a>
+                </Link>
               </li>
               <div className="login-seperator dropdown-item"></div>
               <li>
                 <p
-                  onClick={() =>{
+                  onClick={() => {
                     setLogin(false);
                   }}
                   className=" dropdown-item"

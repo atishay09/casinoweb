@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BettingModal from '../modals/BettingModal';
 
-const Bettablebody = ({isLogin , showModal,amt}) => {
+const Bettablebody = ({isLogin , showModal,amt,id}) => {
     const [show, setShow] = useState(false);
     const betbtnClicked = () =>{
         if(!isLogin){
@@ -28,10 +29,10 @@ const Bettablebody = ({isLogin , showModal,amt}) => {
 
                             </div>
                             <div className="game_name d-inline-block">
-                                <a href="#">
+                                <Link to={`/sport/details/${id}`}>
                                     <p className='team_name text-left'>Sri Lanka women v Indian women</p>
                                     <p className='team_name text-left team_event'>(Womens one day internationals)</p>
-                                </a>
+                                </Link>
 
                             </div>
                             <div className="game_icons">

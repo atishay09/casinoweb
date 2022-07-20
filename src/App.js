@@ -12,10 +12,13 @@ import Slot from "./components/Slot/Slot";
 import Fantasy from "./components/Fantasy/Fantasy";
 import Withdrawmoney from "./components/Withdrawal/Withdrawmoney";
 import Sportgame from "./components/sportgame/Sportgame";
+import Bonus from "./components/HeaderDropdown/Bonus";
+import Accountstatement from "./components/HeaderDropdown/Accountstatement";
+import Activitylog from "./components/HeaderDropdown/Activitylog";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLogin, setLogin] = useState(false);
+  const [isLogin, setLogin] = useState(true);
   const [isdepOpen, setdepOpen] = useState(false);
   const showModal = () => {
     setIsOpen(true);
@@ -40,7 +43,16 @@ function App() {
 
           <Route exact path="/withdraw-request" element={<Withdrawmoney />} />
 
-          <Route exact path="/sport/details/1" element={<Sportgame isLogin={isLogin} showModal={showModal} setLogin={setLogin}/>}/>
+          <Route exact path="/sport/details/:id" element={<Sportgame isLogin={isLogin} showModal={showModal} setLogin={setLogin}/>}/>
+
+          <Route exact path="/bonus" element={<Bonus isLogin={isLogin} setLogin={setLogin}/>}/>
+
+          <Route exact path="/report/accountstatement" element={<Accountstatement />}/>
+
+          <Route exact path="/report/currentbets" element={<Bonus isLogin={isLogin} setLogin={setLogin}/>}/>
+          
+          <Route exact path="/report/activity" element={<Activitylog />}/>
+          
         </Routes>
       </BrowserRouter>
     </>
