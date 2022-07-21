@@ -1,8 +1,8 @@
 :root {
-  --main-color: #2f2f2f;
-  --color-dark: #1d1d1d;
-  --color-green: #ffcb74;
-  --color-light: #f6f6f6;
+  --color-dark: #16191c;
+  --main-color: #3c444b;
+  --color-green: #fdcf13;
+  --color-light: #aaafb5;
 }
 
 .App {
@@ -1702,9 +1702,8 @@ hr {
   justify-content: center;
 }
 .withdraw_head{
-  background-color: #3a3a3a;
+  /* background-color: var(--color-dark); */
   padding: 10px;
-  color: var(--color-dark);
 }
 .main_withdraw_form{
   color: var(--color-light);

@@ -17,6 +17,7 @@ import Accountstatement from "./components/HeaderDropdown/Accountstatement";
 import Activitylog from "./components/HeaderDropdown/Activitylog";
 import State from "./components/Context/State";
 import Changepassword from "./components/modals/Changepassword";
+import Currentbets from "./components/HeaderDropdown/Currentbets";
 
 function App() {
   const [isdepOpen, setdepOpen] = useState(false);
@@ -27,7 +28,7 @@ function App() {
         <BrowserRouter>
           <Login2form />
           <Registeruser />
-          <Changepassword/>
+          <Changepassword />
           <Navbar isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -52,9 +53,9 @@ function App() {
               element={<Accountstatement />}
             />
 
-            <Route exact path="/report/currentbets" element={<Bonus />} />
-
             <Route exact path="/report/activity" element={<Activitylog />} />
+
+            <Route exact path="/report/currentbets" element={<Currentbets />} />
           </Routes>
         </BrowserRouter>
       </State>

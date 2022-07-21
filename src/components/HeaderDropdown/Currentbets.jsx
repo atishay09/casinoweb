@@ -1,20 +1,12 @@
 import React from "react";
-
+import Header2 from '../Headers/Header2'
 const Currentbets = () => {
   return (
     <>
-      <div className="main_container">
-        <Leftsidebar />
-        <div className="center_component d-flex flex-column">
-          <HeaderSport />
-          <div className="d-flex">
-            <div className="container-fluid bonus_page">
-              <div className="d-flex mt-3 info">
-                <h3 className="mx-2">Current Bets</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+    <Header2/>
+      <div className="withdraw_head my-2">
+      <h2 >Current Bets</h2></div>
+      <div className="d-flex container-fluid main_withdraw_form">
       </div>
     </>
   );
