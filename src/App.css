@@ -109,6 +109,8 @@ body {
   position: fixed;
   left: 0;
   z-index: 1000;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .leftsidebar .image {
@@ -172,11 +174,10 @@ body {
 
 .sports_cateogory {
   overflow-y: auto;
+  max-height: 400px;
 }
 
-.menu_box.sport .sports_cateogory{
-  height: calc(100vh - 260px);
-}
+
 
 /* accordion */
 .main-head .accordion-item {
@@ -1014,7 +1015,7 @@ hr {
 }
 
 /* Responsive home page */
-
+/* 
 @media (max-width:1200px) {
   .top_navbar{
     position: relative;
@@ -1222,7 +1223,7 @@ hr {
       width: 100%;
     }
     
-}
+} */
 
 /* sport page */
 
@@ -1387,7 +1388,7 @@ hr {
 
 .sport_header_right {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-right: 16px;
   width: 18%;
   align-items: center;
@@ -1668,6 +1669,10 @@ hr {
 
 /* withdraw money form */
 
+.withdraw_head h2{
+  color: var(--color-light);
+}
+
 .withdraw-money-form{
   display: flex;
   flex-direction: row;
@@ -1701,6 +1706,9 @@ hr {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
+.main_withdraw_form input{
+  border: none;
+}
 .main_withdraw_form input:focus{
   background-color: var(--color-dark);
   outline: none;
@@ -1715,12 +1723,13 @@ hr {
   margin: 4px;
   font-size: 15px;
 }
-#choice{
+.withdraw-money-form #choice{
   display: flex;
   width: 140px;
   height: 38px;
   border-radius: 5px;
   margin-top: 10px;
+  border: none;
 }
 
 .withdraw-money-form button {
@@ -1732,3 +1741,41 @@ hr {
   display: none;
 }
 
+/* points menu */
+
+.sport_header_right .dropdown-menu{
+  background-color: var(--color-dark);
+}
+
+.sport_header_right .dropdown-menu .dropdown-item{
+  color: var(--color-light) ;
+}
+
+.sport_header_right .dropdown-menu .dropdown-item:hover{
+  color: var(--color-dark);
+  font-weight: 500;
+  
+}
+
+.sport_header_right .logout-seperator{
+  color: var(--main-color);
+  height: 1px;
+  background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Bonus page */
+.close{
+  color: white;
+  opacity: 1;
+}
+.bonus_page .info Button p{
+margin: 0;
+font-size: 12px;
+}
+
+.bonus_page .info Button{
+  padding: 0px 4px;
+}

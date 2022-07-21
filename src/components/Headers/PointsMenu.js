@@ -64,7 +64,7 @@ const PointsMenu = () => {
                   Security Auth Verification
                 </Link>
               </li> */}
-              <div className="login-seperator dropdown-item"></div>
+              <div className="logout-seperator"></div>
               <li>
                 <p
                   onClick={() => {

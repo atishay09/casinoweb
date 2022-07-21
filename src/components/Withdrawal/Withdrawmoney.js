@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import Footer from '../Footer/Footer'  
@@ -27,8 +28,8 @@ const Withdrawmoney = () => {
   return (
     <>
       <Header2 />
-      <div className="withdraw_head">
-      <h2>Withdraw Request</h2></div>
+      <div className="withdraw_head my-2">
+      <h2 >Withdraw Request</h2></div>
       <div className="d-flex container-fluid main_withdraw_form">
         <div className="row col-12">
           <div className="col-2 withdraw_type">
@@ -184,9 +185,9 @@ const Withdrawmoney = () => {
                       </select>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary">
+                  <Button type="submit" variant="contained">
                     Submit
-                  </button>
+                  </Button>
                 </form>
               </>
             ) : formwithdraw === 1 ? (

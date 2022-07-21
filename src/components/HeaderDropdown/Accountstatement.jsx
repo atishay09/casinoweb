@@ -1,6 +1,30 @@
 import React from "react";
-import DataTable from "react-data-table-component";
+import DataTable,{createTheme} from "react-data-table-component";
 import Header2 from "../Headers/Header2";
+
+
+createTheme('solarized',{
+  text:{
+    primary: '#c2c2c2',
+    secondary : '#b8b8b8',
+  },
+  background : {
+    default : '#262626'
+  },
+  context:{
+    text : '#ffffff',
+    background:'#939393'
+  },
+  divider:{
+    default :"#848484"
+  },
+  action:{
+    button : 'rgba(0,0,0,.54)',
+    hover : 'rgba(0,0,0,.08)',
+    disabled : 'rgba(0,0,0,.12)',
+  },
+},'dark')
+
 
 const Accountstatement = () => {
   const data = [
@@ -54,6 +78,7 @@ const Accountstatement = () => {
           pagination
           fixedHeader
           highlightOnHover
+          theme="solarized"
         />
       </div>
     </>
