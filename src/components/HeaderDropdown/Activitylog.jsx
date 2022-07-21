@@ -1,6 +1,8 @@
 import React from "react";
 import DataTable,{createTheme} from "react-data-table-component";
 import Header2 from "../Headers/Header2";
+import DataTableExtensions from "react-data-table-component-extensions";
+import "react-data-table-component-extensions/dist/index.css";
 
 createTheme('solarized',{
   text:{
@@ -27,25 +29,63 @@ createTheme('solarized',{
 const Activitylog = () => {
   const data = [
     {
-      name: "",
-      date: "",
-      ipaddress: "",
+      sport: "",
+      eventname: "",
+      marketname: "",
+      nation: "",
+      userrate: "",
+      amount: "",
+      placedate: "",
+      action: "",
     },
   ];
   const columns = [
     {
-      name: "Username",
-      selector: (row) => row.username,
+      name: "Sport",
+      selector: (row) => row.sport,
+      cellExport: (row) => row.sport,
     },
     {
-      name: "Date",
-      selector: (row) => row.date,
+      name: "Event Name",
+      selector: (row) => row.eventname,
+      cellExport: (row) => row.eventname,
     },
     {
-      name: "IP address",
-      selector: (row) => row.ipaddress,
+      name: "Market Name",
+      selector: (row) => row.marketname,
+      cellExport: (row) => row.marketname,
+    },
+    {
+      name: "Nation",
+      selector: (row) => row.nation,
+      cellExport: (row) => row.nation,
+    },
+    {
+      name: "User Rate",
+      selector: (row) => row.userrate,
+      cellExport: (row) => row.userrate,
+    },
+    {
+      name: "Amount",
+      selector: (row) => row.amount,
+      cellExport: (row) => row.amount,
+    },
+    {
+      name: "Place Date",
+      selector: (row) => row.placedate,
+      cellExport: (row) => row.placedate,
+    },
+    {
+      name: "Action",
+      selector: (row) => row.action,
+      cellExport: (row) => row.action,
     },
   ];
+
+  const tableData = {
+    columns,
+    data,
+  };
 
   return (
     <>
@@ -54,6 +94,7 @@ const Activitylog = () => {
         <h2>Activity Log</h2>
       </div>
       <div className="mx-5 mt-4">
+      <DataTableExtensions {...tableData}>
         <DataTable
           title="Activities"
           columns={columns}
@@ -63,6 +104,7 @@ const Activitylog = () => {
           highlightOnHover
           theme="solarized"
         />
+        </DataTableExtensions>
       </div>
     </>
   );
