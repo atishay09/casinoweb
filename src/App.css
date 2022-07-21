@@ -317,6 +317,10 @@ body {
   width: 120px;
 }
 
+.button.modal-btn{
+  width: 100%;
+}
+
 .info-button {
   margin: 0;
   padding: 0;
@@ -1234,6 +1238,10 @@ hr {
 
 .modal-body input{
   background-color: var(--main-color);
+}
+
+.modal-btn{
+  width: 100% !important;
 }
 
 /* betting modal  */

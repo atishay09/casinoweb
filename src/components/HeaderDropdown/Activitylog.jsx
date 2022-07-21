@@ -51,11 +51,11 @@ const Activitylog = () => {
     <>
       <Header2 />
       <div className="withdraw_head">
-        <h2>Account Statement</h2>
+        <h2>Activity Log</h2>
       </div>
       <div className="mx-5 mt-4">
         <DataTable
-          title="Transaction Details"
+          title="Activities"
           columns={columns}
           data={data}
           pagination

@@ -1,95 +1,87 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
-import Alert from "react-bootstrap/Alert";
 import contextvalue from "../Context/context";
 import { useContext } from "react";
+import Form from 'react-bootstrap/Form'
 
-const Login2form = () => {
-
-  const context = useContext(contextvalue);
-  const { setLogin,isloginmodal ,setloginmodal } = context;
-
-  const [showalert, setshowalert] = useState(false);
-
+const Changepassword = () => {
   const [newNote, setnewNote] = useState({
-    username: "",
-    password: "",
+    oldpswd: "",
+    newpswd: "",
+    repnewpswd: "",
   });
   const onChange = (e) => {
     setnewNote({ ...newNote, [e.target.name]: e.target.value });
   };
 
-  const showAlert = () => {
-    setshowalert(true);
-    setTimeout(() => {
-      setshowalert(false);
-    }, 2000);
-  };
+  const context = useContext(contextvalue);
+  const { changepswdmodal, setchangepswdmodal } = context;
 
-  const hideModal = () => {
-    setloginmodal(false);
+  const handleClosecp = () => {
+    setchangepswdmodal(false);
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newNote.username === "foo" && newNote.password === "bar") {
-      setLogin(true);
-    } else {
-      showAlert();
-    }
-    hideModal();
   };
+
   return (
     <>
-      {showalert && (
-        <div className="alert_login">
-          <Alert variant="danger">Invalid Credentials</Alert>
-        </div>
-      )}
-      <Modal show={isloginmodal} onHide={hideModal}>
+      <Modal show={changepswdmodal} onHide={handleClosecp}>
         <Modal.Header closeButton>
-          <Modal.Title>LOGIN</Modal.Title>
+          <Modal.Title>Change Password</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Username</Form.Label>
+              <Form.Label>Old Password</Form.Label>
               <input
-                type="text"
+                type="password"
                 className="form-control"
-                id="username"
-                name="username"
+                id="oldpswd"
+                name="oldpswd"
                 aria-describedby="emailHelp"
                 onChange={onChange}
-                value={newNote.username}
+                value={newNote.oldpswd}
                 required
-                placeholder="Enter Username"
+                minLength={3}
+                placeholder="Old Password"
                 autoComplete="username"
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              <Form.Label>New Password</Form.Label>
               <input
                 type="password"
                 className="form-control"
-                id="password"
-                name="password"
+                id="newpswd"
+                name="newpswd"
                 onChange={onChange}
-                value={newNote.password}
+                value={newNote.newpswd}
                 required
                 minLength={3}
-                placeholder="Password"
+                placeholder="New Password"
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Confirm Password</Form.Label>
+              <input
+                type="password"
+                className="form-control"
+                id="repnewpswd"
+                name="repnewpswd"
+                onChange={onChange}
+                value={newNote.repnewpswd}
+                required
+                minLength={3}
+                placeholder="Confirm New Password"
+              />
             </Form.Group>
+
             <Modal.Footer>
               {/* <button className="btn btn-warning button" onClick={hideModal}>Cancel</button> */}
               <button type="submit" className="btn btn-warning button modal-btn">
-                Login
+                Change Password
               </button>
             </Modal.Footer>
           </Form>
@@ -99,4 +91,4 @@ const Login2form = () => {
   );
 };
 
-export default Login2form;
+export default Changepassword;

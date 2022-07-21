@@ -150,7 +150,7 @@ const handleSubmit = async(e) =>{
           REGISTER
         </button> */}
       <div className="modal-footer">
-        <button type="submit" className="btn button btn-warning">Register</button>
+        <button type="submit" className="btn button btn-warning modal-btn">Register</button>
       </div>
       </form>
       </div>

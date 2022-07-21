@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const PointsMenu = () => {
   const context = useContext(contextvalue);
-  const {setLogin} = context;
+  const {setLogin,setchangepswdmodal} = context;
   return (
     <>
       <div className="float-right sport_header_right">
@@ -55,9 +55,9 @@ const PointsMenu = () => {
                 </Link>{" "}
               </li>
               <li>
-                <Link to="/sport" className=" dropdown-item">
+                <p onClick={()=>{setchangepswdmodal(true)}} className=" dropdown-item">
                   Change Password
-                </Link>
+                </p>
               </li>
               {/* <li>
                 <Link to="/sport" className=" dropdown-item">

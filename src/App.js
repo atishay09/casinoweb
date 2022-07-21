@@ -16,6 +16,7 @@ import Bonus from "./components/HeaderDropdown/Bonus";
 import Accountstatement from "./components/HeaderDropdown/Accountstatement";
 import Activitylog from "./components/HeaderDropdown/Activitylog";
 import State from "./components/Context/State";
+import Changepassword from "./components/modals/Changepassword";
 
 function App() {
   const [isdepOpen, setdepOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <BrowserRouter>
           <Login2form />
           <Registeruser />
+          <Changepassword/>
           <Navbar isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
           <Routes>
             <Route path="/" element={<Home />} />
