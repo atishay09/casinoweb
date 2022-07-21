@@ -3,7 +3,8 @@ import DataTable, { createTheme } from "react-data-table-component";
 import Header2 from "../Headers/Header2";
 import DataTableExtensions from "react-data-table-component-extensions";
 import "react-data-table-component-extensions/dist/index.css";
-
+import "./Account.css";
+import { Button } from "@mui/material";
 createTheme(
   "solarized",
   {
@@ -31,7 +32,6 @@ createTheme(
 );
 
 const Accountstatement = () => {
-
   // const [datadate, setDatadate] = useState({
   //   fromdate:"",
   //   todate:"",
@@ -75,33 +75,33 @@ const Accountstatement = () => {
   const columns = [
     {
       name: "Date",
-      selector: row => row.date,
-      cellExport: row => row.date,
+      selector: (row) => row.date,
+      cellExport: (row) => row.date,
     },
     {
       name: "Sr no",
       selector: (row) => row.srno,
-      cellExport: row => row.srno,
+      cellExport: (row) => row.srno,
     },
     {
       name: "Credit",
       selector: (row) => row.credit,
-      cellExport: row => row.credit,
+      cellExport: (row) => row.credit,
     },
     {
       name: "Debit",
       selector: (row) => row.debit,
-      cellExport: row => row.debit,
+      cellExport: (row) => row.debit,
     },
     {
       name: "Pts",
       selector: (row) => row.pts,
-      cellExport: row => row.pts,
+      cellExport: (row) => row.pts,
     },
     {
       name: "Remark",
       selector: (row) => row.remark,
-      cellExport: row => row.remark,
+      cellExport: (row) => row.remark,
     },
   ];
   const tableData = {
@@ -116,7 +116,33 @@ const Accountstatement = () => {
         <h2>Account Statement</h2>
       </div>
 
-      <div className="mx-5 mt-4">
+      <div className="mx-3 mt-4">
+        <form>
+          <label for="start">From :</label>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2022-07-21"
+            min="2018-01-01"
+            max="2118-12-31"
+          />
+          <label for="start">To: </label>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2022-07-21"
+            min="2018-01-01"
+            max="2118-12-31"
+          />
+          <select className="options">
+            <option value="1">All</option>{" "}
+            <option value="2">Deposit/Withdraw Report</option>{" "}
+            <option value="3">Game Report</option>
+          </select>
+          <Button class="btn btn-primary">Submit</Button>
+        </form>
         <DataTableExtensions {...tableData}>
           <DataTable
             title="Transaction Details"
