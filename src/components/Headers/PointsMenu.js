@@ -9,8 +9,8 @@ const PointsMenu = () => {
   return (
     <>
       <div className="float-right sport_header_right">
-        <span className="balance">Pts: </span>
-        <span className="balance_value">0</span>
+        <span className="balance">Pts:</span>
+        <span className="balance_value">0 &nbsp;</span>
         <span className="balance_value"> | 0</span>
         <div
           data-toggle="collapse"

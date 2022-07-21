@@ -8,7 +8,7 @@ createTheme('solarized',{
     secondary : '#b8b8b8',
   },
   background : {
-    default : '#262626'
+    default : '#23292e'
   },
   context:{
     text : '#ffffff',

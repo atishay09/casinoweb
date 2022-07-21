@@ -45,35 +45,35 @@ const Centercomponent = () => {
         </div>
       )}
       <Carousel className="carousel_images">
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1500}>
       <img
               src="https://www.bing.com/th?id=OIP.BYuUgtA7HtAtQ9zVb_5QsQHaE6&w=170&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
               className="d-block w-100"
               alt="..."
             />
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1500}>
       <img
               src="https://www.bing.com/th?id=OIP.bsiOKGlFjV2aa8z-Iz1PpQHaEK&w=172&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
               className="d-block w-100"
               alt="..."
             />
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1500}>
       <img
               src="https://www.bing.com/th?id=OIP.oun_JdJAfeVDKkjdv_X4rgHaE8&w=142&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
               className="d-block w-100"
               alt="..."
             />
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1500}>
       <img
               src="https://www.bing.com/th?id=OIP.fBYQQAMqYDFxOh5dWobzLgHaFj&w=127&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
               className="d-block w-100"
               alt="..."
             />
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1500}>
       <img
               src="https://www.bing.com/th?id=OIP.fBYQQAMqYDFxOh5dWobzLgHaFj&w=127&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
               className="d-block w-100"
