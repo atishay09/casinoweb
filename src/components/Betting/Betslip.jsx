@@ -1,8 +1,22 @@
 import React, { useState } from 'react'
 
 const Betslip = () => {
+  function betamount1()
+{
+    return 1.5   // here the link of api will come which will change the value dynamically
+}
+
+// function amt()
+// {
+//     return amt = betamount()
+// }
+
+const components = {
+    'betamount': betamount1,
+
+}
     const [amount, setAmount] = useState("");
-    const [betamt, setbetamt] = useState(2.5);
+    const [betamt, setbetamt] = useState(betamount1);
    
     const amtchanged = (e) => {
       setAmount(e.target.value);
