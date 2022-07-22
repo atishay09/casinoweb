@@ -7,18 +7,18 @@
  padding: 2px;
  color: white;
 }
-.options{
+.accstatement.options{
     background-color: inherit;
     color: #aaafb5;
     border: 1px solid white;
     margin-right: 2rem;
     padding: 2px;
 }
-input:hover{
+.date-picker-table input:hover{
     box-shadow: inset 0px 1px 1px rgba(226, 202, 202, 0.692);
 }
 
-.btn{
+.btn-table-form{
 background-color: green;
 border: none;
 width: 9%;

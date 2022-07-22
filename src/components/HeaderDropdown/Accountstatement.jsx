@@ -116,7 +116,7 @@ const Accountstatement = () => {
         <h2>Account Statement</h2>
       </div>
 
-      <div className="mx-3 mt-4">
+      <div className="mx-3 date-picker-table mt-4">
         <form>
           <label for="start">From :</label>
           <input
@@ -136,12 +136,12 @@ const Accountstatement = () => {
             min="2018-01-01"
             max="2118-12-31"
           />
-          <select className="options">
+          <select className="accstatement options">
             <option value="1">All</option>{" "}
             <option value="2">Deposit/Withdraw Report</option>{" "}
             <option value="3">Game Report</option>
           </select>
-          <Button class="btn btn-primary">Submit</Button>
+          <Button class="btn btn-table-form btn-primary">Submit</Button>
         </form>
         <DataTableExtensions {...tableData}>
           <DataTable
