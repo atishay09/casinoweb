@@ -1105,6 +1105,7 @@ hr {
   }
   .right_side_bar{
     width: 100%;
+    padding: 0;
   }
   .main_right_component{
     flex-direction: column-reverse;
@@ -1140,6 +1141,10 @@ hr {
   .rightsidebar_responsive{
     display: flex;
   }
+
+  .right_side_bar.right_sidebar_sport{
+    display: none;
+  }
 }
 
 @media (max-width:768px) {
@@ -1164,6 +1169,10 @@ hr {
   .fantasy_game img{
     width: 25%;
   }
+
+  .betting_table .b1-box{
+    width: 32%;
+  }
 }
 @media (max-width:680px) {
   .nav-link{
@@ -1172,14 +1181,15 @@ hr {
   .footer_top{
     flex-direction: column;
   }
+  
   .payment_icons {
    display: flex;
    flex-direction: column;
    align-items: center;
   }
-  .lay , .back{
+  /* .lay , .back{
     display: none;
-  }
+  } */
   .floating{
     width: 100%;
   }
@@ -1191,7 +1201,11 @@ hr {
     padding: 0;
     text-align: center;
   }
- .bet-table-row{
+
+  .main_center_component .bet_table_row{
+    padding: 6px;
+  }
+ /* .bet-table-row{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1204,7 +1218,24 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+} */
 }
+
+@media (max-width:600px){
+  .center_component .bet_table_row .game_date .game_date{
+    flex-direction: column;
+    display: flex;
+    border-right: none;
+    align-items: center;
+  }
+  .center_component .bet_table_row .game_date{
+    padding-right: 0px;
+    width: auto;
+  }
+  .betting_table .b1-box{
+    width: 42%;
+  }
+ 
 }
 
 @media (max-width:425px) {
@@ -1244,7 +1275,16 @@ hr {
     .top_navbar{
       width: 100%;
     }
-    
+    .bet_table_body .game_title .day{
+      min-width: auto;
+      padding-right: 5px;
+    }
+    .support .footer_top{
+      margin: 15px !important;
+    }
+    .support .footer_top img{
+      margin: 0px 8px;
+    }
 } 
 
 /* sport page */

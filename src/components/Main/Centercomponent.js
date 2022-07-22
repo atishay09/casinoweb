@@ -28,7 +28,7 @@ const Centercomponent = () => {
   //   scroll_listr.scrollBy(-350,0)
   // }
   return (
-    <div className="main_center_component col-10">
+    <div className="main_center_component col-md-9 col-sm-12 col-lg-10">
       {isLogin && (
         <div className="new-event">
           <div className="new-event-item sport4">
