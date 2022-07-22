@@ -1114,24 +1114,15 @@ hr {
 
 @media (max-width:925px) {
   
-  /* .main_center_component{
+  .main_center_component{
     width: 100% ;
-  } */
-  .mynav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .d-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
   .download_apk{
     display: none;
   }
   .right_side_bar{
     width: 100%;
+    padding: 0;
   }
   .main_right_component{
     flex-direction: column-reverse;
@@ -1167,13 +1158,16 @@ hr {
   .rightsidebar_responsive{
     display: flex;
   }
+
+  .right_side_bar.right_sidebar_sport{
+    display: none;
+  }
 }
 
 @media (max-width:768px) {
   .bet_table_header{
     display: none;
   }
-
   .bet_table_row{
     display: flex;
     flex-direction: column;
@@ -1192,18 +1186,9 @@ hr {
   .fantasy_game img{
     width: 25%;
   }
-  .lay , .back{
-    display: none;
-  }
-  .d-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  .res_header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+  .betting_table .b1-box{
+    width: 32%;
   }
 
   .d-flex-1200 .floating {
@@ -1216,20 +1201,19 @@ hr {
 @media (max-width:680px) {
   .nav-link{
     padding: 8px 4px;
-    
   }
   .footer_top{
     flex-direction: column;
-  
   }
+  
   .payment_icons {
    display: flex;
    flex-direction: column;
    align-items: center;
   }
-  .lay , .back{
+  /* .lay , .back{
     display: none;
-  }
+  } */
   .floating{
     width: 100%;
   }
@@ -1241,6 +1225,10 @@ hr {
     padding: 0;
     text-align: center;
   }
+
+  .main_center_component .bet_table_row{
+    padding: 6px;
+  }
  /* .bet-table-row{
   display: flex;
   flex-direction: column;
@@ -1249,8 +1237,29 @@ hr {
 .sub-nation {
   display: flex;
   flex-direction: row !important;
+}
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 } */
+}
 
+@media (max-width:600px){
+  .center_component .bet_table_row .game_date .game_date{
+    flex-direction: column;
+    display: flex;
+    border-right: none;
+    align-items: center;
+  }
+  .center_component .bet_table_row .game_date{
+    padding-right: 0px;
+    width: auto;
+  }
+  .betting_table .b1-box{
+    width: 42%;
+  }
+ 
 }
 
 @media (max-width:425px) {
@@ -1290,7 +1299,16 @@ hr {
     .top_navbar{
       width: 100%;
     }
-    
+    .bet_table_body .game_title .day{
+      min-width: auto;
+      padding-right: 5px;
+    }
+    .support .footer_top{
+      margin: 15px !important;
+    }
+    .support .footer_top img{
+      margin: 0px 8px;
+    }
 } 
 
 /* sport page */
@@ -1462,7 +1480,6 @@ hr {
 
 .sport_header_right {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   padding-right: 16px;
   /* width: 18%; */
@@ -1475,19 +1492,7 @@ hr {
 .balance{
   margin: 0px 10px;
 }
-.myblance{
-  display: flex;
-  flex-direction: row;
 
-}
-.balance_value1::after{
-  content: "|";
-} 
-.res_header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .user-icon {
   height: 40px;
   width: 40px;
