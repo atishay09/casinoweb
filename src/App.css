@@ -1036,7 +1036,6 @@ hr {
   }
   .d-flex-1200 .d-flex{
     width: 100%;
-    justify-content: space-evenly;
   }
   .d-flex-1200 .floating ,.d-flex-1200 .upcoming-fixture_sport{
     width: 48% !important;
@@ -1494,14 +1493,14 @@ hr {
 }
 
 .user-icon {
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   background-color: var(--color-dark);
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  padding: 11px 12px;
+  padding: 6px 8px;
 }
 .user-icon img{
   align-items: center;

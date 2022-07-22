@@ -1,17 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Depositmoney from "../modals/Depositmoney";
 import contextvalue from '../Context/context'
 import { useContext } from "react";
 
-const Navbar = ({ isdepOpen, setdepOpen }) =>
+const Navbar = () =>
 {
 
 
   //context api 
   const context = useContext(contextvalue);
-  const { isLogin, setloginmodal } = context;
+  const { isLogin, setloginmodal, setdepOpen } = context;
 
   let location = useLocation();
   const navigate = useNavigate();
@@ -40,7 +39,6 @@ const Navbar = ({ isdepOpen, setdepOpen }) =>
 
   return (
     <>
-      <Depositmoney isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
       <div className="top_navbar">
         <div className="mynav">
           <ul className="nav justify-content-center">
@@ -95,7 +93,7 @@ const Navbar = ({ isdepOpen, setdepOpen }) =>
           </ul>
         </div>
         {isLogin ? (
-          <div className="deposit_withdraw">
+          <div className="deposit_withdraw d-none-1200">
             <button
               onClick={() =>
               {

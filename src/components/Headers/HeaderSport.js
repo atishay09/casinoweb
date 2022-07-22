@@ -13,7 +13,7 @@ const HeaderSport = () =>
       <PointsMenu />
     </div>
     <div className="top_header top_header_sport d-flex justify-content-between d-flex-1200">
-    <div className="d-flex">
+    <div className="d-flex justify-content-evenly">
         <Offerfloat/>
         <Upcomingfixture/>
         </div>

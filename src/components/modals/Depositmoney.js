@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
+import contextvalue from '../Context/context'
+import { useContext } from "react";
 
-const Depositmoney = ({ isdepOpen, setdepOpen }) => {
+const Depositmoney = () => {
+
+  const context = useContext(contextvalue);
+  const {isdepOpen,setdepOpen} = context;
+
   const [amount, setAmount] = useState("");
   const hideModal = () => {
     setdepOpen(false);
