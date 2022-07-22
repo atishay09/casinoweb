@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Leftsidebar from "../Sidebar/Leftsidebar";
 import contextvalue from '../Context/context'
 import { useContext } from "react";
@@ -6,13 +6,8 @@ import { useContext } from "react";
 const Header = () => {
 
   const context = useContext(contextvalue);
-  const {setloginmodal} = context;
+  const {setloginmodal,togglesidebar} = context;
 
-
-  const [toggle,settoggle] = useState(false)
-  const togglesidebar = ()=>{
-    settoggle(!toggle)
-  }
   return (
     <>
       <div className="top_header d-flex justify-content-between">
@@ -44,7 +39,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-        <Leftsidebar toggle={toggle} />
+        <Leftsidebar  />
     </>
   );
 };

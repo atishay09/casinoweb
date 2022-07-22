@@ -5,9 +5,14 @@ import { useContext } from "react";
 
 const PointsMenu = () => {
   const context = useContext(contextvalue);
-  const {setLogin,setchangepswdmodal} = context;
+  const {setLogin,setchangepswdmodal,togglesidebar} = context;
   return (
-    <>
+    <div className="d-flex justify-content-between">
+    <div>
+    <button className="btn toggle-sidebar-btn" onClick={togglesidebar}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
+    </div>
       <div className="float-right sport_header_right">
         <span className="balance">Pts:</span>
         <span className="balance_value">0 &nbsp;</span>
@@ -79,7 +84,7 @@ const PointsMenu = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1020,10 +1020,27 @@ hr {
   border: 2px solid rgb(205, 89, 89);
   box-shadow: 5px 5px 2px 1px rgba(129, 14, 66, 0.2)
 }
+.d-flex-1200{
+  display: none !important;
+}
 
 /* Responsive home page */
 
 @media (max-width:1200px) {
+  .d-none-1200{
+    display: none !important;
+  }
+  .d-flex-1200{
+    display: flex !important;
+    width: 100%;
+  }
+  .d-flex-1200 .d-flex{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .d-flex-1200 .floating ,.d-flex-1200 .upcoming-fixture_sport{
+    width: 48% !important;
+  }
   .top_navbar{
     position: relative;
     margin-top: 90px;
@@ -1172,6 +1189,13 @@ hr {
 
   .betting_table .b1-box{
     width: 32%;
+  }
+
+  .d-flex-1200 .floating {
+    width: 96% !important;
+  }
+  .d-flex-1200 .upcoming-fixture_sport{
+    display: none !important;
   }
 }
 @media (max-width:680px) {
@@ -1418,9 +1442,11 @@ hr {
 }
 .carousel_vertical_sport .change_outer_sports .change_inner {
   position: relative;
+  overflow-x: hidden;
   animation: rotate2 8s ease-in-out infinite;
 }
 .carousel_vertical_sport .change_outer_sports .element {
+  overflow-x: hidden;
   width: max-content;
 }
 
@@ -1456,7 +1482,7 @@ hr {
   display: flex;
   justify-content: flex-end;
   padding-right: 16px;
-  width: 18%;
+  /* width: 18%; */
   align-items: center;
   color: var(--color-light);
 }

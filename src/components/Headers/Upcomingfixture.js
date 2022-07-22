@@ -11,7 +11,7 @@ const Upcomingfixture = () => {
               <div className="change_outer_sports">
                 <div className="change_inner">
                   <div className="element">
-                    Loremipsumdolorsitamet ascsfdkjkbfdskl.
+                    Loremipsumdolorsitamet
                   </div>
                   <div className="element">
                     Loremipsum dolor sit amet.
