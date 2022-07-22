@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Upcomingfixture = () => {
+const Upcomingfixture = () =>
+{
   return (
     <>
-        <div className="upcoming-fixture_sport">
+      <div className="upcoming-fixture_sport">
         <div className="menu_title_sport">Upcoming Fixtures</div>
         <div className="hooper-vertical_sport">
           <div className="center">
@@ -25,7 +26,7 @@ const Upcomingfixture = () => {
                   <div className="element">
                     Loremipsum dolor sit amet.
                   </div>
-                  
+
                 </div>
               </div>
             </div>
