@@ -122,7 +122,7 @@ const Accountstatement = () => {
           <input type="date" id="start" />
           <label for="start">To: </label>
           <input type="date" id="start" />
-          <select className="options">
+          <select className="accstatement options">
             <option value="1">All</option>{" "}
             <option value="2">Deposit/Withdraw Report</option>{" "}
             <option value="3">Game Report</option>
