@@ -6,12 +6,13 @@ const State = (props) => {
     const [isloginmodal ,setloginmodal] = useState(false)
     const [changepswdmodal, setchangepswdmodal] = useState(false)
     const [toggle,settoggle] = useState(false)
+    const [isdepOpen, setdepOpen] = useState(false);
   const togglesidebar = ()=>{
     settoggle(!toggle)
   }
 
   return (
-    <Context.Provider value={{isLogin,setLogin,isloginmodal ,setloginmodal,changepswdmodal, setchangepswdmodal,togglesidebar,toggle}}>
+    <Context.Provider value={{isLogin,setLogin,isloginmodal ,setloginmodal,changepswdmodal, setchangepswdmodal,togglesidebar,toggle,isdepOpen, setdepOpen}}>
         {props.children}
     </Context.Provider>
   )

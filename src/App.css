@@ -1027,6 +1027,9 @@ hr {
 /* Responsive home page */
 
 @media (max-width:1200px) {
+  .center_component{
+    width: 100% !important;
+  }
   .d-none-1200{
     display: none !important;
   }
@@ -1036,7 +1039,6 @@ hr {
   }
   .d-flex-1200 .d-flex{
     width: 100%;
-    justify-content: space-evenly;
   }
   .d-flex-1200 .floating ,.d-flex-1200 .upcoming-fixture_sport{
     width: 48% !important;
@@ -1069,6 +1071,7 @@ hr {
   .top_navbar .nav li p{
     margin-bottom: 0;
   }
+
   .leftsidebar{
     
     display: none;
@@ -1431,14 +1434,7 @@ hr {
   line-height: 40px;
   height: 40px;
 }
-/* .carousel_vertical_sport .pre {
-  position: absolute;
-  top: 0;
-  right: 52%;
-  height: 45px;
-  text-shadow: 1px 1px 1px var(--main-color);
-  font-weight: 300;
-} */
+
 .carousel_vertical_sport .change_outer_sports {
   position: absolute;
   top: 0;
@@ -1501,14 +1497,14 @@ hr {
 }
 
 .user-icon {
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   background-color: var(--color-dark);
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  padding: 11px 12px;
+  padding: 6px 8px;
 }
 .user-icon img{
   align-items: center;
@@ -1597,16 +1593,7 @@ hr {
   animation-delay: calc(-3s * 2);
 }
 
-/* .carousel__item-head {
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  position: relative;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 
 .carousel__item-sport-body {
   width: 100%;

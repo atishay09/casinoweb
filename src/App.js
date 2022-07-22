@@ -18,18 +18,19 @@ import Activitylog from "./components/HeaderDropdown/Activitylog";
 import State from "./components/Context/State";
 import Changepassword from "./components/modals/Changepassword";
 import Currentbets from "./components/HeaderDropdown/Currentbets";
+import Depositmoney from "./components/modals/Depositmoney";
 
 function App() {
-  const [isdepOpen, setdepOpen] = useState(false);
 
   return (
     <>
       <State>
         <BrowserRouter>
+        <Depositmoney/>
           <Login2form />
           <Registeruser />
           <Changepassword />
-          <Navbar isdepOpen={isdepOpen} setdepOpen={setdepOpen} />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
 
