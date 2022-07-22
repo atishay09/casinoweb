@@ -59,32 +59,33 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>
-                  <div className="bl-box back back2">
-                    <span className="d-block odds">1.64</span>
-                    <span className="d-block">1.51K</span>
-                  </div>
-                  <div className="bl-box back back1">
-                    <span className="d-block odds">1.65</span>
-                    <span className="d-block">1.91K</span>
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">1.66</span>
-                    <span className="d-block">4.22K</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">1.67</span>
-                    <span className="d-block">4.45K</span>
-                  </div>
-                  <div className="bl-box lay lay1">
-                    <span className="d-block odds">1.68</span>
-                    <span className="d-block">5.23K</span>
-                  </div>
-                  <div className="bl-box lay lay2">
-                    <span className="d-block odds">1.69</span>
-                    <span className="d-block">1.84K</span>
+                  <div className="sub-nation">
+                    <div className="bl-box back back2">
+                      <span className="d-block odds">1.64</span>
+                      <span className="d-block sub-d">1.51K</span>
+                    </div>
+                    <div className="bl-box back back1">
+                      <span className="d-block odds">1.65</span>
+                      <span className="d-block sub-d">1.91K</span>
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">1.66</span>
+                      <span className="d-block sub-d">4.22K</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">1.67</span>
+                      <span className="d-block sub-d">4.45K</span>
+                    </div>
+                    <div className="bl-box lay lay1">
+                      <span className="d-block odds">1.68</span>
+                      <span className="d-block sub-d">5.23K</span>
+                    </div>
+                    <div className="bl-box lay lay2">
+                      <span className="d-block odds">1.69</span>
+                      <span className="d-block sub-d">1.84K</span>
+                    </div>
                   </div>
                 </div>
-
                 <div data-title="ACTIVE" className="bet-table-row">
                   <div className="nation-name d-none-mobile">
                     <p>
@@ -93,32 +94,33 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back2">
-                    <span className="d-block odds">2.8</span>{" "}
-                    <span className="d-block">1.42K</span>
-                  </div>
-                  <div className="bl-box back back1">
-                    <span className="d-block odds">2.82</span>{" "}
-                    <span className="d-block">1.8K</span>
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">2.84</span>{" "}
-                    <span className="d-block">358.59</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">2.86</span>{" "}
-                    <span className="d-block">1.1K</span>
-                  </div>
-                  <div className="bl-box lay lay1">
-                    <span className="d-block odds">2.88</span>{" "}
-                    <span className="d-block">2.65K</span>
-                  </div>
-                  <div className="bl-box lay lay2">
-                    <span className="d-block odds">2.9</span>{" "}
-                    <span className="d-block">726.24</span>
+                  <div className="sub-nation">
+                    <div className="bl-box back back2">
+                      <span className="d-block odds">2.8</span>{" "}
+                      <span className="d-block sub-d">1.42K</span>
+                    </div>
+                    <div className="bl-box back back1">
+                      <span className="d-block odds">2.82</span>{" "}
+                      <span className="d-block sub-d">1.8K</span>
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">2.84</span>{" "}
+                      <span className="d-block sub-d">358.59</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">2.86</span>{" "}
+                      <span className="d-block sub-d">1.1K</span>
+                    </div>
+                    <div className="bl-box lay lay1">
+                      <span className="d-block odds">2.88</span>{" "}
+                      <span className="d-block sub-d">2.65K</span>
+                    </div>
+                    <div className="bl-box lay lay2">
+                      <span className="d-block odds">2.9</span>{" "}
+                      <span className="d-block sub-d">726.24</span>
+                    </div>
                   </div>
                 </div>
-
                 <div data-title="ACTIVE" className="bet-table-row">
                   <div className="nation-name d-none-mobile">
                     <p>
@@ -127,29 +129,31 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back2">
-                    <span className="d-block odds">19</span>{" "}
-                    <span className="d-block">237.17</span>
-                  </div>
-                  <div className="bl-box back back1">
-                    <span className="d-block odds">19.5</span>{" "}
-                    <span className="d-block">39.1</span>
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">20</span>{" "}
-                    <span className="d-block">271.09</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">21</span>{" "}
-                    <span className="d-block">24.93</span>
-                  </div>
-                  <div className="bl-box lay lay1">
-                    <span className="d-block odds">22</span>{" "}
-                    <span className="d-block">192.56</span>
-                  </div>
-                  <div className="bl-box lay lay2">
-                    <span className="d-block odds">24</span>{" "}
-                    <span className="d-block">267.11</span>
+                  <div className="sub-nation">
+                    <div className="bl-box back back2">
+                      <span className="d-block odds">19</span>{" "}
+                      <span className="d-block sub-d">237.17</span>
+                    </div>
+                    <div className="bl-box back back1">
+                      <span className="d-block odds">19.5</span>{" "}
+                      <span className="d-block sub-d">39.1</span>
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">20</span>{" "}
+                      <span className="d-block sub-d">271.09</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">21</span>{" "}
+                      <span className="d-block sub-d">24.93</span>
+                    </div>
+                    <div className="bl-box lay lay1">
+                      <span className="d-block odds">22</span>{" "}
+                      <span className="d-block sub-d">192.56</span>
+                    </div>
+                    <div className="bl-box lay lay2">
+                      <span className="d-block odds">24</span>{" "}
+                      <span className="d-block sub-d">267.11</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -198,25 +202,27 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back2 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">64</span>{" "}
-                    <span className="d-block">1L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">68</span>{" "}
-                    <span className="d-block">1L</span>
-                  </div>
-                  <div className="bl-box lay lay1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box lay lay2 no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">64</span>{" "}
+                      <span className="d-block sub-d">1L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">68</span>{" "}
+                      <span className="d-block sub-d">1L</span>
+                    </div>
+                    <div className="bl-box lay lay1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box lay lay2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
                 <div data-title="ACTIVE" className="bet-table-row">
@@ -227,25 +233,27 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back2 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">175</span>{" "}
-                    <span className="d-block">1L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">190</span>{" "}
-                    <span className="d-block">1L</span>
-                  </div>
-                  <div className="bl-box lay lay1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box lay lay2 no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">175</span>{" "}
+                      <span className="d-block sub-d">1L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">190</span>{" "}
+                      <span className="d-block sub-d">1L</span>
+                    </div>
+                    <div className="bl-box lay lay1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box lay lay2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
                 <div data-title="ACTIVE" className="bet-table-row">
@@ -256,24 +264,26 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back2 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box back back">
-                    <span className="d-block odds">1700</span>{" "}
-                    <span className="d-block">50K</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box lay lay1 no-val">
-                    <span className="d-block odds">—</span>{" "}
-                  </div>
-                  <div className="bl-box lay lay2 no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box back back">
+                      <span className="d-block odds">1700</span>{" "}
+                      <span className="d-block sub-d">50K</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box lay lay1 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
+                    <div className="bl-box lay lay2 no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -342,14 +352,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -374,14 +386,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -406,14 +420,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -438,14 +454,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -470,14 +488,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -553,14 +573,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -585,14 +607,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -617,14 +641,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -649,14 +675,16 @@ const Sportdetails = () => {
                           <p>10 over runs ENG(ENG vs SA)adv</p>{" "}
                           <p className="mb-0"></p>
                         </div>{" "}
-                        <div className="bl-box lay">
-                          <span className="d-block odds">54</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
-                        <div className="bl-box back">
-                          <span className="d-block odds">56</span>{" "}
-                          <span className="d-block">100</span>
-                        </div>{" "}
+                        <div className="sub-nation">
+                          <div className="bl-box lay">
+                            <span className="d-block odds">54</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                          <div className="bl-box back">
+                            <span className="d-block odds">56</span>{" "}
+                            <span className="d-block sub-d">100</span>
+                          </div>{" "}
+                        </div>
                         <div className="fancy-min-max">
                           <span>
                             Min:<span>100</span>
@@ -727,12 +755,14 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back">
-                    <span className="d-block odds">2.16</span>{" "}
-                    <span className="d-block">15L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back">
+                      <span className="d-block odds">2.16</span>{" "}
+                      <span className="d-block sub-d">15L</span>{" "}
+                    </div>
+                    <div className="bl-box lay lay no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -748,12 +778,14 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back">
-                    <span className="d-block odds">6.32</span>{" "}
-                    <span className="d-block">15L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back">
+                      <span className="d-block odds">6.32</span>{" "}
+                      <span className="d-block sub-d">15L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -768,12 +800,14 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back">
-                    <span className="d-block odds">2.32</span>{" "}
-                    <span className="d-block">15L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay no-val">
-                    <span className="d-block odds">—</span>{" "}
+                  <div className="sub-nation">
+                    <div className="bl-box back back">
+                      <span className="d-block odds">2.32</span>{" "}
+                      <span className="d-block sub-d">15L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay no-val">
+                      <span className="d-block odds">—</span>{" "}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -939,13 +973,15 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back">
-                    <span className="d-block odds">1.52</span>{" "}
-                    <span className="d-block">5L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">1.65</span>{" "}
-                    <span className="d-block">5L</span>
+                  <div className="sub-nation">
+                    <div className="bl-box back back">
+                      <span className="d-block odds">1.52</span>{" "}
+                      <span className="d-block sub-d">5L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">1.65</span>{" "}
+                      <span className="d-block sub-d">5L</span>
+                    </div>
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -961,13 +997,15 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="bl-box back back">
-                    <span className="d-block odds">2.52</span>{" "}
-                    <span className="d-block">5L</span>
-                  </div>{" "}
-                  <div className="bl-box lay lay">
-                    <span className="d-block odds">2.94</span>{" "}
-                    <span className="d-block">5L</span>
+                  <div className="sub-nation">
+                    <div className="bl-box back back">
+                      <span className="d-block odds">2.52</span>{" "}
+                      <span className="d-block sub-d">5L</span>
+                    </div>{" "}
+                    <div className="bl-box lay lay">
+                      <span className="d-block odds">2.94</span>{" "}
+                      <span className="d-block sub-d">5L</span>
+                    </div>
                   </div>
                 </div>
               </div>

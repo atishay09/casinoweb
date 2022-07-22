@@ -4,15 +4,14 @@ import HeaderSport from "../Headers/HeaderSport";
 import Leftsidebar from "../Sidebar/Leftsidebar";
 import Rightsidebar from "../Sidebar/Rightsidebar";
 import Sportdetails from "./Sportdetails";
-import Betslip from '../Betting/Betslip';
+import Betslip from "../Betting/Betslip";
 import "./sportgame.css";
-import contextvalue from '../Context/context'
+import contextvalue from "../Context/context";
 import { useContext } from "react";
 
 const Sportgame = () => {
-
   const context = useContext(contextvalue);
-  const {isLogin} = context;
+  const { isLogin } = context;
   return (
     <>
       {isLogin ? (
@@ -23,10 +22,8 @@ const Sportgame = () => {
             <div className="d-flex">
               <Sportdetails />
               <div>
-                <h5 className='mx-3 mt-3'>
-                  Betslip
-                </h5>
-              <Betslip />
+                <h5 className="mx-3 mt-3">Betslip</h5>
+                <Betslip />
               </div>
             </div>
           </div>
@@ -37,7 +34,7 @@ const Sportgame = () => {
             <Header />
             <div className="d-flex main_right_component">
               <Sportdetails />
-              <Rightsidebar  />
+              <Rightsidebar />
             </div>
           </div>
         </div>

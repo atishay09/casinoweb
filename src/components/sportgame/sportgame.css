@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css");
+
 .center-container .casino-container,
 .center-container .detail-page-container,
 .center-container .home-container,
@@ -74,7 +76,8 @@
 }
 
 .detail-page-container .max-bet {
-  font-size: 20px;
+  font-size: 12px;
+  color: #AAAFB5;
   text-align: left;
 }
 
@@ -96,6 +99,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
+  
 }
 
 .detail-page-container .bl-title {
@@ -153,7 +157,8 @@
   color: black;
   font-weight: 500;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .bl-box:before {
@@ -282,4 +287,11 @@
     align-items: center;
     min-width: 33.33%;
     max-width: 50%;
+}
+
+.sub-d{
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: black;
 }
