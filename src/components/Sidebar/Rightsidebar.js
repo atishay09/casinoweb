@@ -8,7 +8,7 @@ const Rightsidebar = () => {
   const {setloginmodal} = context;
   
   return (
-    <div className="col-2 right_side_bar">
+    <div className="col-lg-2 col-md-3 col-sm-12 right_side_bar">
       <div className="menu_title winner_lists">
         <p>Winner Announcement</p>
       </div>
