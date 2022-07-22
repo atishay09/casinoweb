@@ -119,24 +119,10 @@ const Accountstatement = () => {
       <div className="mx-3 date-picker-table mt-4">
         <form>
           <label for="start">From :</label>
-          <input
-            type="date"
-            id="start"
-            name="trip-start"
-            value="2022-07-21"
-            min="2018-01-01"
-            max="2118-12-31"
-          />
+          <input type="date" id="start" />
           <label for="start">To: </label>
-          <input
-            type="date"
-            id="start"
-            name="trip-start"
-            value="2022-07-21"
-            min="2018-01-01"
-            max="2118-12-31"
-          />
-          <select className="accstatement options">
+          <input type="date" id="start" />
+          <select className="options">
             <option value="1">All</option>{" "}
             <option value="2">Deposit/Withdraw Report</option>{" "}
             <option value="3">Game Report</option>
