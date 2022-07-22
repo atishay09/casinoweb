@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 import contextvalue from '../Context/context'
 import { useContext } from "react";
 
-const PointsMenu = () => {
+const PointsMenu = () =>
+{
   const context = useContext(contextvalue);
-  const {setLogin,setchangepswdmodal} = context;
+  const { setLogin, setchangepswdmodal } = context;
   return (
     <>
       <div className="float-right sport_header_right">
         <span className="balance">Pts:</span>
-        <span className="balance_value">0 &nbsp;</span>
-        <span className="balance_value"> | 0</span>
+        <span className="myblance">
+          <span className="balance_value1">10</span>
+          <span className="balance_value">100</span>
+        </span>
         <div
           data-toggle="collapse"
           data-target="#user-dropdown"
@@ -55,7 +58,7 @@ const PointsMenu = () => {
                 </Link>{" "}
               </li>
               <li>
-                <p onClick={()=>{setchangepswdmodal(true)}} className=" dropdown-item">
+                <p onClick={() => { setchangepswdmodal(true) }} className=" dropdown-item">
                   Change Password
                 </p>
               </li>
@@ -67,7 +70,8 @@ const PointsMenu = () => {
               <div className="logout-seperator"></div>
               <li>
                 <p
-                  onClick={() => {
+                  onClick={() =>
+                  {
                     setLogin(false);
                   }}
                   className=" dropdown-item"

@@ -1097,8 +1097,18 @@ hr {
 
 @media (max-width:925px) {
   
-  .main_center_component{
+  /* .main_center_component{
     width: 100% ;
+  } */
+  .mynav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   .download_apk{
     display: none;
@@ -1146,6 +1156,7 @@ hr {
   .bet_table_header{
     display: none;
   }
+
   .bet_table_row{
     display: flex;
     flex-direction: column;
@@ -1164,13 +1175,28 @@ hr {
   .fantasy_game img{
     width: 25%;
   }
+  .lay , .back{
+    display: none;
+  }
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .res_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 @media (max-width:680px) {
   .nav-link{
     padding: 8px 4px;
+    
   }
   .footer_top{
     flex-direction: column;
+  
   }
   .payment_icons {
    display: flex;
@@ -1191,7 +1217,7 @@ hr {
     padding: 0;
     text-align: center;
   }
- .bet-table-row{
+ /* .bet-table-row{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1199,12 +1225,8 @@ hr {
 .sub-nation {
   display: flex;
   flex-direction: row !important;
-}
-.d-flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
+} */
+
 }
 
 @media (max-width:425px) {
@@ -1414,6 +1436,7 @@ hr {
 
 .sport_header_right {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-right: 16px;
   width: 18%;
@@ -1426,7 +1449,19 @@ hr {
 .balance{
   margin: 0px 10px;
 }
+.myblance{
+  display: flex;
+  flex-direction: row;
 
+}
+.balance_value1::after{
+  content: "|";
+} 
+.res_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .user-icon {
   height: 40px;
   width: 40px;
