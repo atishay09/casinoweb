@@ -48,8 +48,8 @@ const Sportdetails = () => {
                       </span>
                     </span>
                   </div>
-                  <div className="back bl-title back-title">Back</div>{" "}
-                  <div className="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title yes">Back</div>{" "}
+                  <div className="lay bl-title lay-title yes">Lay</div>
                 </div>
                 <div data-title="ACTIVE" className="bet-table-row">
                   <div className="nation-name d-none-mobile">
@@ -191,8 +191,8 @@ const Sportdetails = () => {
                       Min:<span>100</span>Max:<span>1L</span>
                     </span>
                   </div>
-                  <div className="back bl-title back-title">Back</div>
-                  <div className="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title yes">Back</div>
+                  <div className="lay bl-title lay-title yes">Lay</div>
                 </div>{" "}
                 <div data-title="ACTIVE" className="bet-table-row">
                   <div className="nation-name d-none-mobile">
@@ -323,8 +323,8 @@ const Sportdetails = () => {
                     <div className="fancy-tripple">
                       <div className="bet-table-row">
                         <div className="nation-name"></div>{" "}
-                        <div className="lay bl-title lay-title">No</div>{" "}
-                        <div className="back bl-title back-title">Yes</div>
+                        <div className="lay bl-title lay-title yes">No</div>{" "}
+                        <div className="back bl-title back-title yes">Yes</div>
                       </div>
                     </div>
                   </div>{" "}
@@ -332,8 +332,8 @@ const Sportdetails = () => {
                     <div className="fancy-tripple">
                       <div className="bet-table-row">
                         <div className="nation-name"></div>{" "}
-                        <div className="lay bl-title lay-title">No</div>{" "}
-                        <div className="back bl-title back-title">Yes</div>
+                        <div className="lay bl-title lay-title yes">No</div>{" "}
+                        <div className="back bl-title back-title yes">Yes</div>
                       </div>
                     </div>
                   </div>
@@ -544,8 +544,8 @@ const Sportdetails = () => {
                     <div className="fancy-tripple">
                       <div className="bet-table-row">
                         <div className="nation-name"></div>{" "}
-                        <div className="lay bl-title lay-title">No</div>{" "}
-                        <div className="back bl-title back-title">Yes</div>
+                        <div className="lay bl-title lay-title yes">No</div>{" "}
+                        <div className="back bl-title back-title yes">Yes</div>
                       </div>
                     </div>
                   </div>{" "}
@@ -553,8 +553,8 @@ const Sportdetails = () => {
                     <div className="fancy-tripple">
                       <div className="bet-table-row">
                         <div className="nation-name"></div>{" "}
-                        <div className="lay bl-title lay-title">No</div>{" "}
-                        <div className="back bl-title back-title">Yes</div>
+                        <div className="lay bl-title lay-title yes">No</div>{" "}
+                        <div className="back bl-title back-title yes">Yes</div>
                       </div>
                     </div>
                   </div>
@@ -739,8 +739,8 @@ const Sportdetails = () => {
                       </span>
                     </span>
                   </div>{" "}
-                  <div className="back bl-title back-title">Back</div>{" "}
-                  <div className="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title yes">Back</div>{" "}
+                  <div className="lay bl-title lay-title yes">Lay</div>
                 </div>{" "}
                 <div className="bet-table-mobile-row d-none-desktop">
                   <div className="bet-table-mobile-team-name">
@@ -758,11 +758,11 @@ const Sportdetails = () => {
                   <div className="sub-nation">
                     <div className="bl-box back back">
                       <span className="d-block odds">2.16</span>{" "}
-                      <span className="d-block sub-d">15L</span>{" "}
-                    </div>
-                    <div className="bl-box lay lay no-val">
-                      <span className="d-block odds">—</span>{" "}
-                    </div>
+                      <span className="d-block sub-d">15L</span>
+                    </div>{" "}
+                  </div>
+                  <div className="bl-box lay lay no-val">
+                    <span className="d-block odds">—</span>{" "}
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -783,9 +783,9 @@ const Sportdetails = () => {
                       <span className="d-block odds">6.32</span>{" "}
                       <span className="d-block sub-d">15L</span>
                     </div>{" "}
-                    <div className="bl-box lay lay no-val">
-                      <span className="d-block odds">—</span>{" "}
-                    </div>
+                  </div>
+                  <div className="bl-box lay lay no-val">
+                    <span className="d-block odds">—</span>{" "}
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -957,8 +957,8 @@ const Sportdetails = () => {
                       </span>
                     </span>
                   </div>{" "}
-                  <div className="back bl-title back-title">Back</div>{" "}
-                  <div className="lay bl-title lay-title">Lay</div>
+                  <div className="back bl-title back-title yes">Back</div>{" "}
+                  <div className="lay bl-title lay-title yes">Lay</div>
                 </div>{" "}
                 <div className="bet-table-mobile-row d-none-desktop">
                   <div className="bet-table-mobile-team-name">
@@ -973,15 +973,13 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="sub-nation">
-                    <div className="bl-box back back">
-                      <span className="d-block odds">1.52</span>{" "}
-                      <span className="d-block sub-d">5L</span>
-                    </div>{" "}
-                    <div className="bl-box lay lay">
-                      <span className="d-block odds">1.65</span>{" "}
-                      <span className="d-block sub-d">5L</span>
-                    </div>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">1.52</span>{" "}
+                    <span className="d-block sub-d">5L</span>
+                  </div>{" "}
+                  <div className="bl-box lay lay">
+                    <span className="d-block odds">1.65</span>{" "}
+                    <span className="d-block sub-d">5L</span>
                   </div>
                 </div>
                 <div className="bet-table-mobile-row d-none-desktop">
@@ -997,22 +995,20 @@ const Sportdetails = () => {
                     </p>{" "}
                     <p className="mb-0"></p>
                   </div>{" "}
-                  <div className="sub-nation">
-                    <div className="bl-box back back">
-                      <span className="d-block odds">2.52</span>{" "}
-                      <span className="d-block sub-d">5L</span>
-                    </div>{" "}
-                    <div className="bl-box lay lay">
-                      <span className="d-block odds">2.94</span>{" "}
-                      <span className="d-block sub-d">5L</span>
-                    </div>
+                  <div className="bl-box back back">
+                    <span className="d-block odds">2.52</span>{" "}
+                    <span className="d-block sub-d">5L</span>
+                  </div>{" "}
+                  <div className="bl-box lay lay">
+                    <span className="d-block odds">2.94</span>{" "}
+                    <span className="d-block sub-d">5L</span>
                   </div>
                 </div>
               </div>
             </div>{" "}
           </div>{" "}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

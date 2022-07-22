@@ -19,7 +19,7 @@ const Sportgame = () => {
           <Leftsidebar />
           <div className="center_component d-flex flex-column">
             <HeaderSport />
-            <div className="d-flex">
+            <div className="d-flex res_bet">
               <Sportdetails />
               <div>
                 <h5 className="mx-3 mt-3">Betslip</h5>

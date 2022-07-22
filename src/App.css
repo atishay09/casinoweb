@@ -1168,6 +1168,13 @@ hr {
   .bet_table_header{
     display: none;
   }
+  .yes{
+    display: none;
+  }
+  .res_bet{
+    display: flex;
+    flex-direction: column ;
+  }
   .bet_table_row{
     display: flex;
     flex-direction: column;
