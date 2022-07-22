@@ -6,32 +6,61 @@ import DataTable from "react-data-table-component";
 
 const Currentbets = () => {
 
-
-    const columns = [
-        {
-          name: "Username",
-          selector: (row) => row.username,
-          cellExport: (row) => row.username,
-        },
-        {
-          name: "Date",
-          selector: (row) => row.date,
-          cellExport: (row) => row.date,
-        },
-        {
-          name: "IP address",
-          selector: (row) => row.ipaddress,
-          cellExport: (row) => row.ipaddress,
-        },
-      ];
-
-      const data = [
-        {
-          name: "",
-          date: "",
-          ipaddress: "",
-        },
-      ];
+  const data = [
+    {
+      sport: "",
+      eventname: "",
+      marketname: "",
+      nation: "",
+      userrate: "",
+      amount: "",
+      placedate: "",
+      action: "",
+    },
+  ];
+  const columns = [
+    {
+      name: "Sport",
+      selector: (row) => row.sport,
+      cellExport: (row) => row.sport,
+    },
+    {
+      name: "Event Name",
+      selector: (row) => row.eventname,
+      cellExport: (row) => row.eventname,
+    },
+    {
+      name: "Market Name",
+      selector: (row) => row.marketname,
+      cellExport: (row) => row.marketname,
+    },
+    {
+      name: "Nation",
+      selector: (row) => row.nation,
+      cellExport: (row) => row.nation,
+    },
+    {
+      name: "User Rate",
+      selector: (row) => row.userrate,
+      cellExport: (row) => row.userrate,
+    },
+    {
+      name: "Amount",
+      selector: (row) => row.amount,
+      cellExport: (row) => row.amount,
+    },
+    {
+      name: "Place Date",
+      selector: (row) => row.placedate,
+      cellExport: (row) => row.placedate,
+    },
+    {
+      name: "Action",
+      selector: (row) => row.action,
+      cellExport: (row) => row.action,
+    },
+  ];
+    
       const tableData = {
         columns,
         data,

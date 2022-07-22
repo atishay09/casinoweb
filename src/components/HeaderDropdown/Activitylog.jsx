@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DataTable,{createTheme} from "react-data-table-component";
 import Header2 from "../Headers/Header2";
 import DataTableExtensions from "react-data-table-component-extensions";
@@ -27,60 +27,49 @@ createTheme('solarized',{
 },'dark')
 
 const Activitylog = () => {
-  const data = [
-    {
-      sport: "",
-      eventname: "",
-      marketname: "",
-      nation: "",
-      userrate: "",
-      amount: "",
-      placedate: "",
-      action: "",
-    },
-  ];
+
+  const [datadate, setDatadate] = useState({
+    fromdate:"",
+    todate:"",
+    type:""
+  })
+
+  const onChange = (e) => {
+    setDatadate({ ...datadate, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(datadate)
+  };
+  
   const columns = [
     {
-      name: "Sport",
-      selector: (row) => row.sport,
-      cellExport: (row) => row.sport,
+      name: "Username",
+      selector: (row) => row.username,
+      cellExport: (row) => row.username,
     },
     {
-      name: "Event Name",
-      selector: (row) => row.eventname,
-      cellExport: (row) => row.eventname,
+      name: "Date",
+      selector: (row) => row.date,
+      cellExport: (row) => row.date,
     },
     {
-      name: "Market Name",
-      selector: (row) => row.marketname,
-      cellExport: (row) => row.marketname,
-    },
-    {
-      name: "Nation",
-      selector: (row) => row.nation,
-      cellExport: (row) => row.nation,
-    },
-    {
-      name: "User Rate",
-      selector: (row) => row.userrate,
-      cellExport: (row) => row.userrate,
-    },
-    {
-      name: "Amount",
-      selector: (row) => row.amount,
-      cellExport: (row) => row.amount,
-    },
-    {
-      name: "Place Date",
-      selector: (row) => row.placedate,
-      cellExport: (row) => row.placedate,
-    },
-    {
-      name: "Action",
-      selector: (row) => row.action,
-      cellExport: (row) => row.action,
+      name: "IP address",
+      selector: (row) => row.ipaddress,
+      cellExport: (row) => row.ipaddress,
     },
   ];
+
+  const data = [
+    {
+      name: "",
+      date: "",
+      ipaddress: "",
+    },
+  ];
+
+
 
   const tableData = {
     columns,
@@ -88,12 +77,25 @@ const Activitylog = () => {
   };
 
   return (
+
     <>
       <Header2 />
       <div className="withdraw_head">
         <h2>Activity Log</h2>
       </div>
-      <div className="mx-5 mt-4">
+      <div className="mx-5 date-picker-table mt-4">
+      
+      <form onSubmit={handleSubmit}>
+          <label htmlFor="start">From :</label>
+          <input name='fromdate' value={datadate.fromdate} onChange={onChange} type="date" id="start" />
+          <label htmlFor="start">To: </label>
+          <input name="todate" value={datadate.todate} onChange={onChange} type="date" id="start" />
+          <select name="type" onChange={onChange} className="accstatement options">
+            <option value="login">Login</option>{" "}
+            <option value="changepassword">Change Password</option>{" "}
+          </select>
+          <button type='submit' className="btn btn-table-form btn-primary">Submit</button>
+        </form>
       <DataTableExtensions {...tableData}>
         <DataTable
           title="Activities"

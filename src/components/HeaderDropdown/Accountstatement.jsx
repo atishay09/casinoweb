@@ -32,19 +32,20 @@ createTheme(
 );
 
 const Accountstatement = () => {
-  // const [datadate, setDatadate] = useState({
-  //   fromdate:"",
-  //   todate:"",
-  //   type:""
-  // })
+  const [datadate, setDatadate] = useState({
+    fromdate:"",
+    todate:"",
+    type:""
+  })
 
-  // const onChange = (e) => {
-  //   setDatadate({ ...datadate, [e.target.name]: e.target.value });
-  // };
+  const onChange = (e) => {
+    setDatadate({ ...datadate, [e.target.name]: e.target.value });
+  };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(datadate)
+  };
 
   const data = [
     {
@@ -117,17 +118,17 @@ const Accountstatement = () => {
       </div>
 
       <div className="mx-3 date-picker-table mt-4">
-        <form>
-          <label for="start">From :</label>
-          <input type="date" id="start" />
-          <label for="start">To: </label>
-          <input type="date" id="start" />
-          <select className="accstatement options">
-            <option value="1">All</option>{" "}
-            <option value="2">Deposit/Withdraw Report</option>{" "}
-            <option value="3">Game Report</option>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="start">From :</label>
+          <input name='fromdate' value={datadate.fromdate} onChange={onChange} type="date" id="start" />
+          <label htmlFor="start">To: </label>
+          <input name="todate" value={datadate.todate} onChange={onChange} type="date" id="start" />
+          <select name="type" onChange={onChange} className="accstatement options">
+            <option value="all">All</option>{" "}
+            <option value="depositwithdraw">Deposit/Withdraw Report</option>{" "}
+            <option value="game">Game Report</option>
           </select>
-          <Button class="btn btn-table-form btn-primary">Submit</Button>
+          <button type='submit' className="btn btn-table-form btn-primary">Submit</button>
         </form>
         <DataTableExtensions {...tableData}>
           <DataTable
