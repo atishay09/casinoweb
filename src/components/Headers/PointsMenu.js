@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import contextvalue from '../Context/context'
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -71,25 +70,25 @@ const PointsMenu = () =>
           </div>
             </li>
               <li>
-                <Link to="/bonus" className="dropdown-item">
+                <p onClick={()=>{navigate('/bonus')}} className="dropdown-item">
                   Bonus
-                </Link>
+                </p>
               </li>
               <li>
-                <Link to="/report/accountstatement" className="dropdown-item">
+                <p onClick={()=>{navigate('/report/accountstatement')}} className="dropdown-item">
                   Account Statement
-                </Link>{" "}
+                </p>{" "}
               </li>
               <li>
                 {" "}
-                <Link to="/report/currentbets" className=" dropdown-item">
+                <p onClick={()=>{navigate('/report/currentbets')}} className=" dropdown-item">
                   Current Bets
-                </Link>{" "}
+                </p>{" "}
               </li>
               <li>
-                <Link to="/report/activity" className=" dropdown-item">
+                <p onClick={()=>{navigate('/report/activity')}} className=" dropdown-item">
                   Activity Log
-                </Link>{" "}
+                </p>{" "}
               </li>
               <li>
                 <p onClick={() => { setchangepswdmodal(true) }} className=" dropdown-item">
@@ -97,9 +96,9 @@ const PointsMenu = () =>
                 </p>
               </li>
               {/* <li>
-                <Link to="/sport" className=" dropdown-item">
+                <p to="/sport" className=" dropdown-item">
                   Security Auth Verification
-                </Link>
+                </p>
               </li> */}
               <div className="logout-seperator"></div>
               <li>
